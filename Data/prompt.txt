@@ -1,0 +1,38 @@
+You are an experienced researcher in the field of NLP and AI. You are given research paper abstracts in JSON format with fields like "abstract" and "keywords".  
+
+For each abstract, generate the following JSON object:
+
+{
+  "problem": "<concise research gap or challenge, without results>",
+  "idea": "<the research idea addressing the problem, no results or performance numbers>"
+}
+
+Instructions:
+- The problem should focus on what is missing or challenging in existing work. It can hint at the proposed idea but must not fully describe it.  
+- The idea should clearly describe the proposed approach or framework to address the problem.  
+- Do NOT mention experimental results, metrics, or evaluation findings.  
+- Keep both fields tight, precise, and in academic tone.  
+
+---
+
+Few-shot examples:
+
+Input:
+{"abstract": "Effective communication requires the ability to refer to specific parts of an observation in relation to others. While emergent communication literature shows success in developing various language properties, no research has shown the emergence of such positional references. This paper demonstrates how agents can communicate about spatial relationships within their observations...", "keywords": ["emergent communication", "spatial references", "spatial deixis", "npmi", "nlp"]}
+
+Output:
+{
+  "problem": "Existing work on emergent communication has not explored whether agents can develop a language to refer to spatial relationships between different parts of their observations.",
+  "idea": "Introduce a referential game framework that explicitly requires agents to communicate about spatial relations, creating the conditions under which a language for positional references could emerge."
+}
+
+---
+
+Input:
+{"abstract": "Disease grading is a crucial task in medical image analysis. Due to the continuous progression of diseases, i.e., the variability within the same level and the similarity between adjacent stages, accurate grading is highly challenging. Furthermore, in real-world scenarios, models trained on limited source domain datasets should also be capable of handling data from unseen target domains...", "keywords": ["medical image grading", "domain generalization", "selective state space", "gaussian mixture model"]}
+
+Output:
+{
+  "problem": "Accurate disease grading from medical images is challenging due to continuous disease progression and performance degradation caused by domain shift between source and unseen target datasets.",
+  "idea": "Propose a Severity-aware Recurrent Modeling framework that encodes image patches sequentially via a state space model and uses EM-based state recalibration with Gaussian Mixture Models to align features across domains for robust grading."
+}
