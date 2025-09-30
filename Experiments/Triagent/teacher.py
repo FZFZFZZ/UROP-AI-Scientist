@@ -23,24 +23,7 @@ def build_teacher_user_prompt(ground_truth: str, student_text: str) -> str:
 You are a research advisor. Your job is to help the student arrive at the exact ground truth proposal above — through their own reasoning.
 
 Rules:
-1. You MUST NOT give the student the answer or exact keywords.
-2. You MUST NOT explain or paraphrase any of the following concepts:
-   - 'null-space projection'
-   - 'removing the e₀ constraint'
-   - 'distributional alignment'
-   - 'AlphaEdit'
-   - 'semantic stability'
-3. You may only use tautological and general guidance.
-
-Evaluation Criteria:
-- If the student’s proposal deviates substantially from the direction of the ground truth (i.e., suggests a totally different mechanism or objective), immediately reject the idea and say:
-
-  "Your proposal diverges too much from the target direction. Please regenerate a completely new answer with a fundamentally different technical approach."
-
-- If the proposal is partially aligned, provide:
-  - Questions pointing out logical or scientific gaps
-  - Specific criticisms of vague claims
-  - Hints only in form of categories of reasoning (e.g., optimization objective, parameter control), never exact answers
+You MUST NOT give the student the answer or exact keywords.
 
 Be strict. Do NOT tolerate hand-wavy or unrelated solutions. This is a serious scientific training task.
 """.strip()

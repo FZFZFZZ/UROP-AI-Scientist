@@ -6,7 +6,7 @@ from openai import OpenAI
 
 # ---- Config
 OPENAI_API_KEY = "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"
-DEFAULT_STUDENT_MODEL = os.environ.get("STUDENT_MODEL", "llama3.3")  # ollama local
+DEFAULT_STUDENT_MODEL = os.environ.get("STUDENT_MODEL", "llama3.1:8b")  # ollama local
 DEFAULT_TEACHER_MODEL = os.environ.get("TEACHER_MODEL", "gpt-4.1")
 DEFAULT_EVALUATOR_MODEL = os.environ.get("EVALUATOR_MODEL", "gpt-4.1")
 
@@ -14,13 +14,8 @@ LOG_DIR = Path(os.environ.get("LOG_DIR", "logs"))
 LOG_DIR.mkdir(exist_ok=True, parents=True)
 
 def get_openai_client():
-    """Return an authenticated OpenAI client using OPENAI_API_KEY from env."""
     from openai import OpenAI
     api_key = OPENAI_API_KEY
-    if not api_key:
-        raise RuntimeError(
-            "OPENAI_API_KEY not set. Export it in your shell or pass api_key=... when creating the client."
-        )
     return OpenAI(api_key=api_key)
     
 def sha_uid(payload: Dict[str, Any], prefix: str = "") -> str:

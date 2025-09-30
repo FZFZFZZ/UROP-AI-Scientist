@@ -12,31 +12,19 @@ from common import (
 
 STUDENT_PROMPT_TEMPLATE = """You are a PhD student working in the field of AI and NLP.
 
-You must propose a concise research idea as a JSON object.
+You must propose a concise and novel research idea (1-3 sentences), given the problem context and advisor feedback. Directly output the idea.
 
 # Few-shot example
-{{
-  "problem": "There is a lack of principled understanding and effective automatic methods for selecting high-quality instruction tuning data to align large language models efficiently.",
-  "idea": "Develop a framework that systematically measures instruction data along dimensions such as complexity, quality, and diversity, and introduces novel techniques for enhanced data assessment, enabling automatic selection of data samples for efficient instruction tuning."
-}}
+Problem: There is a lack of principled understanding and effective automatic methods for selecting high-quality instruction tuning data to align large language models efficiently.,
+Idea: Develop a framework that systematically measures instruction data along dimensions such as complexity, quality, and diversity, and introduces novel techniques for enhanced data assessment, enabling automatic selection of data samples for efficient instruction tuning.
 
 # Your task
-Problem:
-{problem}
-
-Advisor feedback (optional):
-{advisor}
-
-# Output format (strict)
-Return ONLY a compact JSON object with exactly these keys:
-{{
-  "problem": "<brief restatement of the problem>",
-  "idea": "<your proposed research idea in 1–3 sentences>"
-}}
+Problem: {problem}
+Advisor feedback: {advisor}
 """
 
-def ask_student(problem: str, teacher_feedback: str = None, model: str = DEFAULT_STUDENT_MODEL, temperature: float = 1.2) -> str:
-    advisor_block = f"Your advisor previously said:\n{teacher_feedback}" if teacher_feedback else ""
+def ask_student(problem: str, teacher_feedback: str = None, model: str = DEFAULT_STUDENT_MODEL, temperature: float = 0.5) -> str:
+    advisor_block = f"{teacher_feedback}" if teacher_feedback else ""
     prompt = STUDENT_PROMPT_TEMPLATE.format(problem=problem, advisor=advisor_block)
 
     def _call():
@@ -54,7 +42,7 @@ def main():
     ap = argparse.ArgumentParser(description="Student generator (Ollama → llama3.3)")
     add_common_args(ap)
     ap.add_argument("--model", default=DEFAULT_STUDENT_MODEL)
-    ap.add_argument("--temperature", type=float, default=1.2)
+    ap.add_argument("--temperature", type=float, default=0.5)
     ap.add_argument("--problem", default=None, help="Single problem string. If not set, read from --in.")
     ap.add_argument("--history", default=None, help="Optional JSONL with prior teacher feedback by uid.")
     args = ap.parse_args()
@@ -65,7 +53,6 @@ def main():
         for row in read_jsonl(outfile):
             if "uid" in row: seen.add(row["uid"])
 
-    # Inputs: either single problem or items from JSONL (each line: {"uid","problem", "teacher_feedback"?})
     items: List[Dict[str, Any]] = []
     if args.problem:
         uid = sha_uid({"problem": args.problem}, prefix="p_")
@@ -81,14 +68,6 @@ def main():
                 continue
             items.append({"uid": uid, "problem": row.get("problem",""), "teacher_feedback": row.get("teacher_feedback")})
 
-    # Optionally merge teacher feedback by uid
-    if args.history:
-        feedback_map = {r["uid"]: r.get("teacher_feedback") for r in read_jsonl(Path(args.history)) if "uid" in r}
-        for it in items:
-            if it["uid"] in feedback_map and feedback_map[it["uid"]]:
-                it["teacher_feedback"] = feedback_map[it["uid"]]
-
-    # Process sequentially (Ollama local, usually fine; change to ThreadPool if needed)
     for it in items:
         out = ask_student(it["problem"], it.get("teacher_feedback"), model=args.model, temperature=args.temperature)
         append_jsonl(outfile, {"uid": it["uid"], "problem": it["problem"], "student": out})

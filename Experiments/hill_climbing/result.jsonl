@@ -1,0 +1,100 @@
+{
+    "custom_id": "2e8f2d9e1823256c",
+    "problem": "Despite growing interest in deep learning for tabular data, gradient-boosted decision trees continue to outperform deep learning models, and existing retrieval-augmented tabular DL approaches are often complex and inefficient.",
+    "target_idea": "Develop a feed-forward neural network architecture incorporating a k-Nearest-Neighbors-inspired retrieval component with an attention-like mechanism to efficiently leverage information from similar training instances for improved tabular data prediction.",
+    "best_idea": "Design a retrieval module structured as a learned metric space specifically tailored to the tabular domain (e.g., via supervised metric learning or graph-based approaches), enabling efficient and interpretable neighbor lookups integrated into downstream deep prediction models.",
+    "best_score": 0.995,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "1ec939c27a741902",
+    "problem": "Simplicial neural networks face prohibitive memory and training-time requirements due to the large number of simplices and their interactions in higher-order graph structures.",
+    "target_idea": "Develop a scalable simplicial-aware neural network that leverages pre-aggregated simplicial features as inputs, enabling constant run-time and memory usage regardless of the size or density of the simplicial complex.",
+    "best_idea": "Adopt a retrieval-augmented training paradigm that, for each batch, seamlessly integrates precomputed representations of frequently occurring simplex configurations from an external memory to bypass redundant computations.",
+    "best_score": 0.92,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "3f7930e45125dc0d",
+    "problem": "Current chain-of-thought prompting methods for large language models are limited by their reliance on static exemplars and insufficient mechanisms for iterative exploration and self-evaluation during complex reasoning tasks.",
+    "target_idea": "Introduce an automated prompting framework that iteratively explores multiple reasoning paths, performs self-evaluation and error analysis, and revises prompts based on these insights to progressively enhance the model's reasoning capabilities.",
+    "best_idea": "Develop an interactive prompting protocol where the LLM collaborates with a specialized verifier model that continuously interjects counterfactuals or alternative sub-steps, encouraging the model to refine and diversify its reasoning iteratively throughout the answer generation process.",
+    "best_score": 0.998,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "7f8fd92d4b2b5c90",
+    "problem": "Existing privacy research on large language models has predominantly focused on the risk of memorized training data extraction, overlooking the potential for these models to infer sensitive personal attributes from user-provided text during inference.",
+    "target_idea": "Conduct a comprehensive analysis of pretrained LLMs' ability to infer personal attributes from real-world user text, and examine the effectiveness of current privacy mitigations such as text anonymization and model alignment in preventing such inference.",
+    "best_idea": "Create a causal interpretability framework to trace and identify which features or input patterns the LLM uses to infer sensitive attributes, enabling targeted mitigation strategies at the representation or attention-head level.",
+    "best_score": 0.94,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "415798ee3c9c2379",
+    "problem": "Online model-based reinforcement learning faces challenges due to data nonstationarity, leading to catastrophic forgetting in neural networks and making efficient, optimal fitting of all past experiences computationally prohibitive.",
+    "target_idea": "Develop a world model based on linear regression with nonlinear random features, combined with a locality sensitive sparse encoding, to enable efficient incremental FTL updates and maintain model expressiveness for online learning in nonstationary environments.",
+    "best_idea": "Adopt a meta-learning framework where the world model is trained to quickly adapt to distributional shifts via gradient-based parameter updates, enabling efficient retrieval and consolidation of knowledge across nonstationary data streams.",
+    "best_score": 0.75,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "2e5c40d7167b443e",
+    "problem": "Current neural subset selection methods often neglect the informative context provided by the superset when modeling set functions, limiting their ability to fully capture relationships between subsets and their originating supersets.",
+    "target_idea": "Introduce an information aggregation module that jointly merges representations of subsets and supersets in a permutation-invariant manner, ensuring that learning incorporates sufficient statistics of the superset for improved subset selection.",
+    "best_idea": "Augment standard set-based encoders by attaching differentiable memory modules initialized with superset statistics, allowing the model to reference aggregate context at selection time.",
+    "best_score": 0.995,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "a6af25222211b026",
+    "problem": "Frozen large language models lack the ability to directly interpret visual information, and existing linear transformation methods inadequately align the embedding spaces of pretrained vision models and LLMs for effective multimodal understanding.",
+    "target_idea": "Propose a method that maps visual embeddings into the LLM word embedding space using a linear transformation and optimal transport-based assignment, enforcing consistent cross-modal representations by predicting assignments between modalities to ground LLMs in visual data.",
+    "best_idea": "Integrate a graph-based alignment module that learns inter-modal correspondences by modeling relationships between vision patches and language tokens, refining embeddings through graph neural message passing prior to feeding into the LLM.",
+    "best_score": 0.85,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "55bce820f6dcb229",
+    "problem": "The shift in NLP tasks toward human-aligned applications introduces challenges in evaluating large language models, particularly regarding generality, flexibility across protocols, and interpretability, which are insufficiently addressed by existing evaluation methods.",
+    "target_idea": "Develop a generative judge model trained on diverse real-world user queries and LLM responses, capable of handling multiple evaluation protocols and providing structured natural language critiques to comprehensively assess aligned language models.",
+    "best_idea": "Design a multi-objective evaluation platform that simultaneously tests models over orthogonal alignment goals (e.g., ethical reasoning, user intent recognition, adaptability to new rules), using multi-task learning metrics to identify trade-offs and generalization limits.",
+    "best_score": 0.88,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "257de07b566d0fa5",
+    "problem": "There is a limited theoretical understanding of the expressive power of Graph Neural Networks, particularly regarding what they can and cannot learn, despite various enhancements based on Weisfeiler-Lehman tests.",
+    "target_idea": "Analyze the expressive power of GNNs through a probabilistic lens by relating their predictions to inference in probabilistic graphical models, and introduce a hierarchical framework along with new methods to improve their capacity to capture complex dependencies.",
+    "best_idea": "Integrate higher-order non-local interactions, such as those captured by topological data analysis (e.g., persistent homology), into GNNs and empirically assess to what extent these augmentations enable discrimination of otherwise indistinguishable graphs, with formal proofs when possible.",
+    "best_score": 0.86,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}
+{
+    "custom_id": "2739fd533a598e39",
+    "problem": "Existing methods for capturing predictive uncertainty often address only limited aspects of uncertainty and lack a unified approach that is effective for both training interventions and test-time applications such as selective classification.",
+    "target_idea": "Introduce an instance-conditional reweighting method that leverages an auxiliary network trained via a bilevel optimization framework with a meta-objective of minimizing dropout variance, thereby providing a unified mechanism for modeling predictive uncertainty across both training and inference scenarios.",
+    "best_idea": "Integrate a meta-learning module that dynamically adapts uncertainty quantification strategies based on performance feedback from both training interventions and test-time selective classification tasks.",
+    "best_score": 0.82,
+    "iters": 15,
+    "gen_model": "gpt-4.1",
+    "score_model": "o4-mini"
+}

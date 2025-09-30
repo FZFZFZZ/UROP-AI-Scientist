@@ -1,1 +1,0 @@
-Develop a feed-forward neural network architecture incorporating a custom k-Nearest-Neighbors-inspired retrieval component with an attention-like mechanism to efficiently leverage information from similar training instances for improved tabular data modeling.

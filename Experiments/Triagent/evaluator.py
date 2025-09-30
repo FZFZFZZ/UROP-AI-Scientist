@@ -18,12 +18,12 @@ EVAL_USER_TEMPLATE = """[Ground Truth Proposal]
 {student}
 
 [Task]
-Is the student's proposal semantically equivalent in technical content and intent to the ground truth? The following key concept must be specifically present: "null space of preserved knowledge"
+To what extent is the student's proposal semantically equivalent in technical content and intent to the ground truth? Explain and output a similarity score.
 
 Respond ONLY in this valid JSON format:
 {{
-  "aligned": true or false,
-  "reason": "short explanation here"
+    "reason": "short explanation here",
+    "score": "0.xxxx"
 }}
 
 DO NOT include any preamble or explanation outside the JSON.
@@ -89,7 +89,7 @@ def main():
         verdict = external_judge(r["student"], gt, client, model=args.model)
         out = {"uid": r["uid"], "judge": verdict}
         if args.with_sim:
-            out["similarity"] = similarity_score(r["student"], gt)
+            out["similarity"] = verdict["score"]
         return out
 
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
