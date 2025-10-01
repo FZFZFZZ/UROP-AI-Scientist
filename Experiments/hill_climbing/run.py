@@ -11,9 +11,10 @@ We return: {custom_id, problem, target_idea, best_idea, best_score, iters, error
 import os, sys, json, argparse, time
 from typing import List, Tuple, Optional
 from openai import OpenAI
+import ollama
 
 # -------------------- Config (defaults; override via CLI) --------------------
-GEN_MODEL   = os.getenv("GEN_MODEL", "gpt-4.1")   # generator (no target exposure)
+GEN_MODEL   = os.getenv("GEN_MODEL", "llama3.2")   # generator (no target exposure)
 SCORE_MODEL = os.getenv("SCORE_MODEL", "o4-mini") # list-wise judge (sees target)
 K           = int(os.getenv("K", "5"))
 MAX_ITERS   = int(os.getenv("MAX_ITERS", "5"))
@@ -33,37 +34,39 @@ def _client() -> OpenAI:
 client = _client()
 
 # -------------------- LLM helpers (Responses→Chat fallback) ------------------
-_REASONING_MODELS = {"o4-mini", "gpt-5", "o4", "o4-mini-high"}
 def _supports_reasoning(model: str) -> bool:
-    m = (model or "").lower()
-    return any(m.startswith(r) for r in _REASONING_MODELS)
+    _REASONING_MODELS = {"o4-mini", "gpt-5", "o4", "o4-mini-high"}
+    return any(model.lower().startswith(r) for r in _REASONING_MODELS)
 
 def _resp_text(messages: list, model: str, temperature: Optional[float] = None, try_reasoning: bool = True) -> str:
-    def _responses_call(reasoning: bool):
-        kwargs = dict(model=model, input=messages)
-        if reasoning:
-            kwargs["reasoning"] = {"effort": "medium"}
-        try:
-            r = client.responses.create(**kwargs)
-            return r.output_text
-        except Exception:
-            return None
+    if model.startswith("llama") or ":" in model:
+        r = ollama.chat(
+            model=model,
+            messages=messages,
+            options={"temperature": float(temperature) if temperature else 1.0}
+        )
+        return r["message"]["content"]
+
+    from openai import OpenAI
+    key = os.getenv("OPENAI_API_KEY")
+    if not key:
+        raise SystemExit("Please set OPENAI_API_KEY for OpenAI models")
+    client = OpenAI(api_key=key)
 
     if try_reasoning and _supports_reasoning(model):
-        out = _responses_call(reasoning=True)
-        if out is not None:
-            return out
+        try:
+            r = client.responses.create(model=model, input=messages, reasoning={"effort": "medium"})
+            return r.output_text
+        except Exception:
+            pass
 
-    out = _responses_call(reasoning=False)
-    if out is not None:
-        return out
-
+    # fallback → chat.completions
     chat_temp = 1.0 if temperature is None else float(temperature)
     r = client.chat.completions.create(model=model, temperature=chat_temp, messages=messages)
     return r.choices[0].message.content or ""
 
 # -------------------- Generation & Scoring --------------------
-GEN_PROMPT = ""  # keep empty unless you want to seed it
+GEN_PROMPT = ""
 
 def gen_candidates(model: str, problem: str, current: str, score: float, k: int = 5, temperature: float = 1.0) -> List[str]:
     sys_msg = "You propose concise, technically coherent research ideas for the given problem. Return ONLY JSON."
