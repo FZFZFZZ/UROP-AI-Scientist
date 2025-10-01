@@ -35,7 +35,7 @@ client = _client()
 
 # -------------------- LLM helpers (Responses→Chat fallback) ------------------
 def _supports_reasoning(model: str) -> bool:
-    _REASONING_MODELS = {"o4-mini", "gpt-5", "o4", "o4-mini-high"}
+    _REASONING_MODELS = {"o4-mini", "gpt-5", "o3", "o4-mini-high"}
     return any(model.lower().startswith(r) for r in _REASONING_MODELS)
 
 def _resp_text(messages: list, model: str, temperature: Optional[float] = None, try_reasoning: bool = True) -> str:
@@ -73,7 +73,7 @@ def gen_candidates(model: str, problem: str, current: str, score: float, k: int 
     user = (
         (GEN_PROMPT or "").strip()
         + "\nProblem:\n" + problem
-        + f"\nCurrent similarity towards ideal answer:\n{score}"
+        + f"\nCurrent similarity towards ideal answer (>0.95 is marked close; otherwise please think of something creative):\n{score}"
         + "\n\nCurrent idea:\n" + current
         + f"\n\nTask: Propose {k} alternative ideas that could better solve the problem. "
           "Vary mechanisms (data, model, training signal, retrieval structure, evaluation) and avoid trivial rewording. "

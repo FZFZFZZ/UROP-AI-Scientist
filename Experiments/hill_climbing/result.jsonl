@@ -1,1 +1,10 @@
-{"custom_id": "2e8f2d9e1823256c", "problem": "Despite growing interest in deep learning for tabular data, gradient-boosted decision trees continue to outperform deep learning models, and existing retrieval-augmented tabular DL approaches are often complex and inefficient.", "target_idea": "Develop a feed-forward neural network architecture incorporating a k-Nearest-Neighbors-inspired retrieval component with an attention-like mechanism to efficiently leverage information from similar training instances for improved tabular data prediction.", "best_idea": "Graph Attention Network-based Top-K Sampling Strategies for Robustness to Out-of-Distribution Samples", "best_score": 0.75, "iters": 3, "gen_model": "llama3.2", "score_model": "o4-mini"}
+{
+    "custom_id": "2e8f2d9e1823256c",
+    "problem": "Despite growing interest in deep learning for tabular data, gradient-boosted decision trees continue to outperform deep learning models, and existing retrieval-augmented tabular DL approaches are often complex and inefficient.",
+    "target_idea": "Develop a feed-forward neural network architecture incorporating a k-Nearest-Neighbors-inspired retrieval component with an attention-like mechanism to efficiently leverage information from similar training instances for improved tabular data prediction.",
+    "best_idea": "Graph Attention Network-based Top-K Sampling Strategies for Robustness to Out-of-Distribution Samples",
+    "best_score": 0.75,
+    "iters": 3,
+    "gen_model": "llama3.2",
+    "score_model": "o4-mini"
+}
