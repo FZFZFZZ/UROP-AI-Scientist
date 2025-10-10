@@ -243,7 +243,7 @@ def collect_iclr_year(year: int, max_pages: int = 50, include_decisions: bool = 
     session.close()
 
     df = pd.DataFrame(list(best_by_forum.values()))
-    # Optional: filter very-short abstracts
+    
     if not df.empty:
         mask = df["abstract"].fillna("").str.len() >= 100
         removed = (~mask).sum()
@@ -277,28 +277,44 @@ def main():
     df.to_parquet(full_path)
     logger.info("Saved full dataset → %s (rows=%d)", full_path, len(df))
 
-    # Accepted = pdate set OR decision says Accept (covers both pathways)
+    # Accepted (preliminary): pdate present OR decision startswith "Accept"
     accepted = df[(df["pdate"].notna()) | (df["decision"].str.startswith("Accept", na=False))].copy()
     acc_path = f"{args.out_prefix}{year}_accepted.parquet"
     accepted.to_parquet(acc_path)
-    logger.info("Saved accepted-only → %s (rows=%d)", acc_path, len(accepted))
+    logger.info("Saved accepted-only (pre-clean) → %s (rows=%d)", acc_path, len(accepted))
 
-    # Console summaries
+    # Console summaries (pre-clean)
     logger.info("Decision breakdown:")
     for k, v in df["decision"].value_counts(dropna=False).items():
         logger.info("  %-18s %5d", (k or "Unknown"), v)
 
-    logger.info("Accepted breakdown:")
+    logger.info("Accepted breakdown (pre-clean):")
     for k, v in accepted["decision"].value_counts(dropna=False).items():
         logger.info("  %-18s %5d", (k or "Unknown"), v)
 
-    if not accepted.empty:
-        print("\nSample accepted:")
-        print(accepted.loc[:, ["title", "decision"]].head(10).to_string(index=False))
+    # -------- Clean step (final) --------
+    # Keep ONLY true accepts; drop Withdrawn/Reject/etc. even if they had pdate
+    before = len(accepted)
+    accepted_clean = accepted[accepted["decision"].str.startswith("Accept", na=False)].copy()
+    dropped = before - len(accepted_clean)
+
+    # Overwrite the same file with the cleaned set
+    accepted_clean.to_parquet(acc_path)
+    logger.info("Cleaned accepted-only → %s (rows=%d, dropped=%d)", acc_path, len(accepted_clean), dropped)
+
+    # Console summaries (post-clean)
+    logger.info("Accepted breakdown (cleaned):")
+    for k, v in accepted_clean["decision"].value_counts(dropna=False).items():
+        logger.info("  %-18s %5d", (k or "Unknown"), v)
+
+    if not accepted_clean.empty:
+        print("\nSample accepted (cleaned):")
+        print(accepted_clean.loc[:, ["title", "decision"]].head(10).to_string(index=False))
     else:
-        logger.info("No accepted rows detected — check that `pdate` is present in payloads for this year.")
+        logger.info("No accepted rows after cleaning — check decision extraction rules.")
 
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())

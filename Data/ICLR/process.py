@@ -1,6 +1,6 @@
 import pandas as pd
 
-parquet_files = ["./iclr2024.parquet", "./iclr2025.parquet"]
+parquet_files = ["./iclr2024_accepted.parquet", "./iclr2025.parquet"]
 
 all_data = pd.DataFrame()
 
