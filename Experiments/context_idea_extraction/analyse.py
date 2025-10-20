@@ -32,7 +32,6 @@ def main():
                     help="Input JSONL with fields: id, Context, Idea")
     ap.add_argument("--abstracts", dest="abstracts_path", required=True,
                     help="Target JSONL with fields: id, abstract (for source lookup)")
-    ap.add_argument("--fflm_model", default="gpt-4o", help="Model for FFLM() (default: gpt-4o)")
     args = ap.parse_args()
 
     id2abs = load_id_to_abstract(args.abstracts_path)
@@ -71,8 +70,8 @@ def main():
 
             try:
                 # --- FFLM: source = abstract; summaries = Context / Idea
-                fflm_val_c = FFLM(source=abstract, summary=context, model=args.fflm_model)
-                fflm_val_i = FFLM(source=abstract, summary=idea,    model=args.fflm_model)
+                fflm_val_c = FFLM(source=abstract, summary=context)
+                fflm_val_i = FFLM(source=abstract, summary=idea)
 
                 fflm_c_vals.append(fflm_val_c)
                 fflm_i_vals.append(fflm_val_i)
