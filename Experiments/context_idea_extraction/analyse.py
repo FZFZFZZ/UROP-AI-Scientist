@@ -5,6 +5,7 @@ from typing import Dict
 
 from FFLM import FFLM
 from Flesch import Flesch
+from perplexity import perplexity
 
 def load_id_to_abstract(path: str) -> Dict[str, str]:
     """Load a JSONL file where each line has at least: {"id": "...", "abstract": "..."}"""
@@ -41,6 +42,7 @@ def main():
     # collectors
     n = 0
     fflm_c_vals, fflm_i_vals = [], []
+    ppl_c_vals, ppl_i_vals = [], []
     flesch_c_vals, flesch_i_vals = [], []
     len_c_words, len_i_words = [], []
 
@@ -72,22 +74,22 @@ def main():
                 # --- FFLM: source = abstract; summaries = Context / Idea
                 fflm_val_c = FFLM(source=abstract, summary=context)
                 fflm_val_i = FFLM(source=abstract, summary=idea)
-
                 fflm_c_vals.append(fflm_val_c)
                 fflm_i_vals.append(fflm_val_i)
-
 
                 flesch_c = Flesch(context)
                 flesch_i = Flesch(idea)
                 flesch_c_vals.append(flesch_c)
                 flesch_i_vals.append(flesch_i)
 
+                ppl_c_vals.append(perplexity(context))
+                ppl_i_vals.append(perplexity(idea))
+
                 len_c_words.append(len(context.split()))
                 len_i_words.append(len(idea.split()))
                 n += 1
 
-                if n % 10 == 0:
-                    print(f"Processed {n} records...")
+                print(f"Processed {n} records...")
 
             except Exception as e:
                 print(f"⚠️  Error for id={pid}: {type(e).__name__}: {e}")
@@ -97,6 +99,8 @@ def main():
     print(fflm_i_vals)
     print(flesch_c_vals)
     print(flesch_i_vals)
+    print(ppl_c_vals)
+    print(ppl_i_vals)
     print(len_c_words)
     print(len_i_words)
     print("\n=== SUMMARY (averages) ===")
@@ -112,6 +116,10 @@ def main():
         print(f"Avg Flesch — Context: {statistics.mean(flesch_c_vals):.2f}")
     if flesch_i_vals:
         print(f"Avg Flesch — Idea:    {statistics.mean(flesch_i_vals):.2f}")
+    if ppl_c_vals:
+        print(f"Avg Perplexity (context): {statistics.mean(ppl_c_vals):.4f}")
+    if ppl_i_vals:
+        print(f"Avg Perplexity (idea): {statistics.mean(ppl_i_vals):.4f}")   
 
 if __name__ == "__main__":
     main()

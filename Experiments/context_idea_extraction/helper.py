@@ -29,7 +29,7 @@ def get_response(model: str, system_prompt: str, user_prompt: str, *, temperatur
     )
     return (chat.choices[0].message.content or "").strip()
 
-def load_model(model_name="Qwen/Qwen3-4B", device=None):
+def load_model(model_name="baffo32/decapoda-research-llama-7B-hf", device=None):
     device = device or ("cuda" if torch.cuda.is_available() else "cpu")
     tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)
     model = AutoModelForCausalLM.from_pretrained(
