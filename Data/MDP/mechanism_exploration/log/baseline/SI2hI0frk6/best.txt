@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Introduce a hybrid encoder architecture that uses separate branches for processing text and image data, then merges these representations using a fusion layer optimized through attention mechanisms. This structure could enhance the model's ability to learn from both modalities without the need for quantizing images into discrete tokens.

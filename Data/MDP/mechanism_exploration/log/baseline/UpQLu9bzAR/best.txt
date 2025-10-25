@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a hierarchical reinforcement learning framework that breaks down long-horizon tasks into manageable sub-tasks, each associated with its own reward model trained on segmented action-free videos and corresponding language instructions. This method addresses sub-stage awareness and improves the granularity of task understanding.

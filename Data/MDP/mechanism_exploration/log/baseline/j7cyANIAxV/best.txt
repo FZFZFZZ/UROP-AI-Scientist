@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Implement a cross-validation scheme where each fold is designed with a controlled degree of dissimilarity, ensuring that every model is validated against both similar and dissimilar drug-target pairs, thus providing a more robust measure of model performance.

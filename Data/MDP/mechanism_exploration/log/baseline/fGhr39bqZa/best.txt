@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Advance the field by developing a theoretical framework that relaxes the pure children assumption and provides formal proofs of identifiability and estimability in causal models with mixed parentage, guiding practical algorithm development.

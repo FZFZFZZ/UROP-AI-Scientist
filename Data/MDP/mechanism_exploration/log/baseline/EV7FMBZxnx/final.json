@@ -1,0 +1,11 @@
+{
+  "id": "EV7FMBZxnx",
+  "target_idea": "Propose a region gaze-amplification network (RGANet) to progressively exploit concealed objects from lensless imaging measurements. This includes a region gaze module (RGM) to mine spatial-frequency cues and a region amplifier (RA) to enhance the details of object regions, improving concealed object detection performance.",
+  "context": "Detecting concealed objects, such as in vivo lesions or camouflage, requires specialized imaging systems. Lensless cameras, which are compact and flexible, present a promising alternative to traditional bulky lens systems. However, the lack of lenses results in measurements that lack visual semantics, creating significant challenges for concealed object detection.",
+  "initial_idea": "Develop a hybrid imaging system that combines lensless camera technology with deep learning-based computational imaging. This system would use AI to reconstruct high-resolution images from the sparse and semantically limited data captured by the lensless cameras. Specifically, train a neural network to recognize patterns and textures associated with concealed objects, leveraging transfer learning from datasets obtained from traditional lens-based systems to improve detection accuracy and reduce training time.",
+  "final_idea": "Employ a hierarchical deep learning architecture that first uses coarse detection to identify potential areas with concealed objects and then applies fine-grained analysis to these regions to improve detection accuracy and reduce false positives.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 111,
+  "elapsed_sec": 1478.1554608345032
+}

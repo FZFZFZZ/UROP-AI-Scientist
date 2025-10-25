@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Introduce a semi-supervised learning framework that combines few-shot learning with unsupervised data augmentation for vision-language models. This approach leverages a small amount of labeled data in the target domain alongside a larger pool of unlabeled data, using consistency regularization to ensure robust domain adaptation.

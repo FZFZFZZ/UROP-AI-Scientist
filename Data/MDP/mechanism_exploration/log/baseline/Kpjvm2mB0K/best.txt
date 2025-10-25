@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Implement an algorithm based on the concept of core-set construction, where a small, representative set of columns that approximates the entire stream's behavior is maintained. This core-set would be updated using a novel geometric merging strategy, aimed at preserving the most critical features of the regression problem with minimal space.

@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Employ a hierarchical Bayesian framework within the diffusion model where the priors are heavy-tailed distributions, such as Cauchy or stable distributions. This approach would allow for a more robust estimation of the tail behavior by inferring distribution parameters from the data itself, potentially improving the capture of rare events.

@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Explore the use of hindsight experience replay in GFlowNets to reframe unsuccessful trajectories as successful ones for different goals, thus providing additional training signals and mitigating the impact of sparse rewards in complex environments.

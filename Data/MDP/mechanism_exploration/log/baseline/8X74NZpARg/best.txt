@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Apply a game-theoretical approach to GNNs where nodes and their neighbors are considered as players in a cooperative game, and the payouts are based on the contribution to overall prediction accuracy. This method would mathematically formalize neighbor importance and provide a strategy-proof mechanism to evaluate it.

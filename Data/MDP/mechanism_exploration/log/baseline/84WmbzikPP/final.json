@@ -1,0 +1,11 @@
+{
+  "id": "84WmbzikPP",
+  "target_idea": "Propose Stiefel Flow Matching as a generative model to predict 3D molecular structures under exact moment constraints by embedding the space of $n$-atom point clouds in the Stiefel manifold. This approach includes learning simpler and shorter flows through approximate solutions for equivariant optimal transport on the Stiefel manifold.",
+  "context": "Molecular structure elucidation is crucial for understanding chemical phenomena and has applications in various fields such as natural products, lab syntheses, forensic samples, and the interstellar medium. The task involves predicting a molecule's 3D structure from its molecular formula and moments of inertia, which can be measured with high precision using rotational spectroscopy. Existing generative models can sample 3D structures with approximately correct moments, but they do not fully utilize the precision available from experimental data.",
+  "initial_idea": "Develop an AI-driven hybrid modeling framework that integrates quantum chemistry simulations with deep learning to predict molecular structures. This framework would utilize a novel neural architecture that learns to correct discrepancies between predicted and observed moments of inertia by adjusting simulated molecular conformations in real-time. This approach leverages the high precision of rotational spectroscopy data to continually refine and optimize the 3D structures, improving the accuracy and reliability of molecular structure predictions in complex chemical environments.",
+  "final_idea": "Develop an AI-driven hybrid modeling framework that integrates quantum chemistry simulations with deep learning to predict molecular structures. This framework would utilize a novel neural architecture that learns to correct discrepancies between predicted and observed moments of inertia by adjusting simulated molecular conformations in real-time. This approach leverages the high precision of rotational spectroscopy data to continually refine and optimize the 3D structures, improving the accuracy and reliability of molecular structure predictions in complex chemical environments.",
+  "final_sim_score": 0.65,
+  "rounds_run": 40,
+  "explored_total": 95,
+  "elapsed_sec": 1351.6111249923706
+}

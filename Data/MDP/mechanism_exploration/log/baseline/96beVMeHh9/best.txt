@@ -1,0 +1,3 @@
+Best score: 0.55
+Best idea:
+Implement an adaptive causal inference model utilizing Gaussian Process Dynamical Systems to capture the temporal evolution of variables in continuous-time medical data. This approach will allow for the modeling of non-linear dependencies and stochastic behaviors inherent in treatment-confounder interactions, enhancing prediction accuracy of intervention outcomes.

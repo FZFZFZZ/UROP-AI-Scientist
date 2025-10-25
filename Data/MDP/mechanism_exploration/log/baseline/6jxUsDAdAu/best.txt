@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Develop a theoretical analysis of the trade-offs between model complexity, training data size, and the severity of OOD shifts, aiming to establish quantitative guidelines for when benign overfitting can be expected to occur and when it may lead to failure.

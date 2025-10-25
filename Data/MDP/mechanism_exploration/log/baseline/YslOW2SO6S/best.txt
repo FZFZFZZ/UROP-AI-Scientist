@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Explore the use of Fourier Transform Convolutional Neural Networks (FT-CNNs) for S2S climate forecasting, which can natively handle spherical data by operating in the spectral domain. This method would directly tackle the spherical harmonics, capturing global atmospheric patterns more effectively and accurately.

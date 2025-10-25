@@ -1,0 +1,11 @@
+{
+  "id": "t8fu5m8R5m",
+  "target_idea": "Propose creating a pseudo-anomaly group from normal samples and using adversarial training with contrastive loss as an objective function to enhance robustness. Address the issue of spurious negative pairs by defining opposite pairs and adversarially separating them to improve inter-group perturbations.",
+  "context": "Anomaly Detection (AD) methods face challenges in robustness against adversarial attacks, which affects their reliability in critical applications like autonomous driving. This vulnerability is due to the AD setup, which typically uses only unlabeled normal samples for training, making detectors susceptible to adversarial anomalies during testing. Adversarial training is difficult to implement effectively without labeled data, as it requires an objective function that can maximize the margin between normal and anomaly distributions.",
+  "initial_idea": "Develop a semi-supervised adversarial simulation framework for anomaly detection systems where a generative adversarial network (GAN) is trained on unlabeled normal data to simulate both normal operations and potential anomalies. Integrate a \"fake anomaly critic\" module within the GAN that differentiates between generated normal operations and generated anomalies based on their deviation from the latent normal pattern. This setup allows the anomaly detection system to learn and improve its discriminatory capability against a wide range of simulated adversarial attacks, thus improving its robustness and reliability in scenarios where labeled data is scarce or non-existent.",
+  "final_idea": "Implement a hybrid model combining unsupervised clustering with supervised adversarial training, where clusters of normal data help define what constitutes an anomaly and adversarial examples are generated based on these clusters. This approach helps in creating a more defined boundary between normal and anomalous states, enhancing detection accuracy.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 69,
+  "elapsed_sec": 1731.2100901603699
+}

@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Employ a multi-layer perceptron (MLP) to predict the parameters of blur based on a dataset of 3D motion captures, then use these parameters to drive a physics-based rendering engine for generating synthetic blur in diverse scenes.

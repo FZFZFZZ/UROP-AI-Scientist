@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Propose a manifold-adaptive batch normalization method that scales and shifts learned representations according to the local geometry of the data manifold, potentially reducing internal covariate shift in manifold-structured data.

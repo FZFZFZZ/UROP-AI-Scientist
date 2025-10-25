@@ -1,0 +1,11 @@
+{
+  "id": "Cnwz9jONi5",
+  "target_idea": "Investigate the relationship between RM accuracy and policy performance in a synthetic setting, revealing that similar RM accuracies can lead to different policy performances and that the method of measuring accuracy significantly affects its predictive power for policy outcomes.",
+  "context": "Reward Models (RMs) are essential for aligning language models with human preferences, and their evaluation typically relies on accuracy against a validation set of manually annotated preference data. However, the connection between RM accuracy and the performance of downstream policies is not well understood, and current methods may not fully capture the potential for RM overoptimization.",
+  "initial_idea": "Develop a meta-learning framework for Reward Models that dynamically adjusts training objectives based on real-time feedback from downstream task performance. This framework could use a continuous learning loop where the reward model's predictions influence a downstream task, and the outcomes of this task feed back into training the reward model. This approach would aim to mitigate overoptimization by directly tying Reward Model training to practical outcomes, ensuring that improvements in RM accuracy directly correlate with enhanced task performance.",
+  "final_idea": "Construct a simulation environment where virtual agents perform tasks based on reward models, allowing researchers to observe and measure the impact of RM inaccuracies on agent behavior over time.",
+  "final_sim_score": 0.8,
+  "rounds_run": 40,
+  "explored_total": 128,
+  "elapsed_sec": 1212.3291130065918
+}

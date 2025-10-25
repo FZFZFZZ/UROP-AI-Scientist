@@ -1,0 +1,11 @@
+{
+  "id": "Mfnh1Sqdwf",
+  "target_idea": "Introduce Seq2Exp, a Sequence to Expression network designed to discover and extract regulatory elements that influence gene expression. The approach involves decomposing epigenomic signals and DNA sequences based on causal active regulatory elements and applying an information bottleneck with the Beta distribution to filter out non-causal components.",
+  "context": "Predicting gene expressions from DNA sequences is a complex task due to the challenge of identifying regulatory elements that control gene expressions. Understanding the causal relationship between epigenomic signals, DNA sequences, and their regulatory elements is crucial for accurate prediction.",
+  "initial_idea": "Develop an integrated AI framework that utilizes graph neural networks (GNNs) to model the complex interactions between DNA sequences, epigenomic modifications, and gene expressions. This framework would construct a multi-layered graph where nodes represent genomic elements (genes, promoters, enhancers), and edges represent biochemical interactions and epigenetic signals. The GNN would then be trained to predict gene expression patterns based on the dynamic state of these interactions, providing a holistic view of the transcriptional regulation landscape.",
+  "final_idea": "Develop a multi-layered computational model that integrates deep learning with causal inference, allowing for the automated extraction and analysis of features from DNA sequences and epigenomic data, aimed at improving the accuracy of gene expression predictions.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 120,
+  "elapsed_sec": 1899.128263950348
+}

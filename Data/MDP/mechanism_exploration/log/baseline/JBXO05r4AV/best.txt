@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Employ a Bayesian optimization technique to guide the selection of demonstration examples, focusing on maximizing a utility function that balances the trade-off between model confidence and example diversity. This method would iteratively improve the quality of selected examples based on probabilistic modeling of their effectiveness.

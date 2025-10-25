@@ -1,0 +1,3 @@
+Best score: 0.92
+Best idea:
+Develop a benchmark called "StreamContext Challenge" for evaluating LVLMs in long-context streaming video understanding. This involves creating datasets consisting of unedited, long-duration video streams (e.g., entire sports events, full-length documentaries) paired with a sequence of incrementally prompted questions that require the model to update and refine its responses as more information becomes available or as events unfold. The evaluation metric would focus on the model's ability to handle temporal dependencies, understand evolving narratives, and accurately integrate new information from ongoing video streams without losing coherence or context accuracy.

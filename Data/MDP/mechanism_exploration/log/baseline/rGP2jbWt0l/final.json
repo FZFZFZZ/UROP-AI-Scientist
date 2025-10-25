@@ -1,0 +1,11 @@
+{
+  "id": "rGP2jbWt0l",
+  "target_idea": "Propose a Metric-Driven Attribution method for Vision Transformers (ViT) called MDA, which uses attribution quality metrics to guide the creation of attribution maps. This method optimizes patch order and magnitude across all patch tokens, allowing for a smooth trade-off between sparse and dense attributions by adjusting the optimization objective.",
+  "context": "Attribution algorithms are used to explain computer vision models by attributing the model's response to specific pixels in the input. Existing methods generate explanations by transforming internal model representations like class activation maps, gradients, attention, or relevance scores. The effectiveness of these attribution maps is evaluated using attribution quality metrics.",
+  "initial_idea": "Develop a dynamic attribution method that adapts explanation granularity based on the object complexity and context within an image. By employing a context-aware layered approach, the method would use deep reinforcement learning to decide when to provide high-level attributions (such as whole object regions) versus detailed attributions (specific features or textures). This approach not only personalizes the explanation according to user needs but also enhances the interpretability of AI in diverse real-world applications, like medical imaging, where different levels of explanatory detail are required for various medical expertise levels.",
+  "final_idea": "Investigate the application of reinforcement learning to optimize the trade-offs in attribution map generation, where an agent iteratively adjusts attribution parameters to maximize a reward function defined by interpretability and sparsity metrics.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 139,
+  "elapsed_sec": 980.9692301750183
+}

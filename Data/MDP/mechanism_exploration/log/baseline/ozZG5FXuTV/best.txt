@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Develop a hybrid model that integrates both counterfactual reasoning and causal inference, aiming to mimic the decision-making process of radiologists by understanding underlying causal relationships in medical imaging data.

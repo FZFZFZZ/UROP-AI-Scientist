@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Employ a hierarchical approach in video anomaly detection by using convolutional neural networks to first extract local features and then aggregate them at various scales to capture both micro and macro anomalies effectively.

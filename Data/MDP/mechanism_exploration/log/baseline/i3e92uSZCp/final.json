@@ -1,0 +1,11 @@
+{
+  "id": "i3e92uSZCp",
+  "target_idea": "Introduce Language Guided Skill Discovery (LGSD), a framework that uses large language models to enhance semantic diversity in skill discovery. LGSD utilizes user prompts to constrain the search space and guide agents to explore semantically diverse states, resulting in a set of semantically distinctive skills.",
+  "context": "Skill discovery methods allow agents to learn a variety of behaviors without needing explicit rewards. Achieving a semantically diverse set of skills is important for their applicability in downstream tasks. Existing methods either use discriminators to differentiate skills or focus on expanding state coverage, but the direct pursuit of semantic diversity in skills is not well-explored.",
+  "initial_idea": "Propose a method that utilizes natural language process models to define and differentiate skills semantically. By integrating a pre-trained language model, the agent can describe its actions in natural language, allowing it to conceptualize and target semantically diverse goals based on the linguistic descriptions derived from its own behaviors. This linguistic framework could guide the skill discovery process, enabling a richer and more varied set of behaviors that align more closely with human-like understanding and categorization of actions.",
+  "final_idea": "Propose a method where the agent's environment includes a variety of 'narrative contexts' that it must adapt to, using a language model to interpret these contexts and adjust its behavior accordingly. This could promote the development of skills that are not only diverse but also contextually appropriate and semantically rich.",
+  "final_sim_score": 0.87,
+  "rounds_run": 40,
+  "explored_total": 133,
+  "elapsed_sec": 1514.8332760334015
+}

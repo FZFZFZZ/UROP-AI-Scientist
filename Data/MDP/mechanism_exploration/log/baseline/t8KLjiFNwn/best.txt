@@ -1,0 +1,3 @@
+Best score: 0.62
+Best idea:
+Explore the use of sparsity-inducing regularization during the training of the SSM-Transformer models to naturally reduce the number of active parameters, thereby decreasing the model's computational complexity and improving deployment feasibility on mobile devices.

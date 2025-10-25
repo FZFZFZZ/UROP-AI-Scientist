@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Employ a Bayesian optimization strategy to systematically explore the antibody sequence space, using prior experimental data to update the probability model and efficiently guide the search towards optimal mutations.

@@ -1,0 +1,3 @@
+Best score: 0.65
+Best idea:
+Introduce a Cross-Modal Embedding Space in which both text and image features are projected before generation, allowing for a pre-emptive alignment that could reduce the need for post-hoc corrections typically handled by CFG.

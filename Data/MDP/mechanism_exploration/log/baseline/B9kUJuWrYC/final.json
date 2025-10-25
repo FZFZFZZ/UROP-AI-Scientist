@@ -1,0 +1,11 @@
+{
+  "id": "B9kUJuWrYC",
+  "target_idea": "Propose PRISM, a federated learning framework for generative models that uses a stochastic binary mask to identify a sparse subnetwork with high generative performance, minimizing communication overhead. This approach includes maximum mean discrepancy loss and a mask-aware dynamic moving average aggregation method to ensure stable performance and resource efficiency.",
+  "context": "Federated learning (FL) has seen advancements, but integrating generative models into FL faces challenges like high communication costs and unstable training in environments with heterogeneous data. These issues hinder the effective deployment of generative models in FL, especially in non-IID and privacy-preserving settings.",
+  "initial_idea": "Develop a method wherein generative models in a federated learning setting utilize a hierarchical bayesian updating mechanism for model parameters that effectively captures the heterogeneity across different nodes. Each client updates not only the global model parameters but also maintains local bayesian priors that influence how their data adjusts the generative model, reducing communication overhead by selectively sharing only significant parameter updates. This approach preserves privacy, minimizes communication costs, and significantly improves stability in non-IID data environments.",
+  "final_idea": "Introduce a sparsity-inducing regularization technique in the training of generative models within federated learning frameworks. By promoting sparsity in the parameter updates that are communicated, this method would reduce the size of the data transmitted between nodes, addressing high communication costs while maintaining privacy and accommodating data heterogeneity.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 91,
+  "elapsed_sec": 1017.6371150016785
+}

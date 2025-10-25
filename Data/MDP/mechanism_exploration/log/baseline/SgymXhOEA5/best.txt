@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Incorporate a camera-aware normalization layer into ReID models that adjusts the feature distribution based on the identified camera, aiming to neutralize the effect of camera-specific biases dynamically.

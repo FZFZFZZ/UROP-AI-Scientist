@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Apply graph-based techniques to structure the prediction sets in the hierarchical conformal prediction framework, where nodes represent potential outputs and edges indicate confidence levels. This visual approach could aid in better understanding the relationships and transitions between different levels of predictions.

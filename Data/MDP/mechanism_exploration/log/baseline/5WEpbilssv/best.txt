@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Propose a new evaluation metric for machine learning models that specifically measures their ability to decode and predict outcomes from biological perturbation experiments, ensuring that the models contribute meaningfully to biological insights.

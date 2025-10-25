@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Develop a robust attention-based model that incorporates memory modules to retain information about point locations across frames, facilitating better tracking through occlusions and ensuring continuity when points reappear.

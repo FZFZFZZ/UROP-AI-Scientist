@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Investigate the application of genetic algorithms to evolve calibration datasets over generations by selecting and recombining high-performing subsets of data, thus optimizing the dataset for better pruning outcomes without extensive domain knowledge.

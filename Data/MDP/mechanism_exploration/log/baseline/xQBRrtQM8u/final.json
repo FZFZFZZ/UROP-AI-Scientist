@@ -1,0 +1,11 @@
+{
+  "id": "xQBRrtQM8u",
+  "target_idea": "Reframe reward fine-tuning as a stochastic optimal control problem and enforce a specific memoryless noise schedule during fine-tuning. Introduce a new algorithm called Adjoint Matching, which treats SOC problems as a regression problem to enhance the performance of reward fine-tuning in generative models.",
+  "context": "Dynamical generative models, such as Flow Matching and denoising diffusion models, are commonly used to produce samples through iterative processes. However, there is a lack of theoretically-sound methods for enhancing these models with reward fine-tuning, which is crucial for improving their performance.",
+  "initial_idea": "Develop a hybrid model that integrates reinforcement learning (RL) with dynamical generative models by introducing a reward-based objective function specifically designed for the iterative sampling process of models like Flow Matching and denoising diffusion models. This RL-enhanced approach would adjust the parameters of the generative process at each iteration based on the rewards received, which evaluate the quality and diversity of samples produced. The integration would involve training a policy network to predict the optimal sequence of generative steps (noises, flows) that maximize a cumulative reward function, aligning the generative model closer with predefined performance metrics and enhancing output quality in a target-driven manner.",
+  "final_idea": "Develop a hybrid model that integrates reinforcement learning (RL) with dynamical generative models by introducing a reward-based objective function specifically designed for the iterative sampling process of models like Flow Matching and denoising diffusion models. This RL-enhanced approach would adjust the parameters of the generative process at each iteration based on the rewards received, which evaluate the quality and diversity of samples produced. The integration would involve training a policy network to predict the optimal sequence of generative steps (noises, flows) that maximize a cumulative reward function, aligning the generative model closer with predefined performance metrics and enhancing output quality in a target-driven manner.",
+  "final_sim_score": 0.65,
+  "rounds_run": 40,
+  "explored_total": 72,
+  "elapsed_sec": 948.8783717155457
+}

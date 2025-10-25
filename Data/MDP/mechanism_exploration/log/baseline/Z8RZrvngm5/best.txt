@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Utilize a simulation-based approach in NAS where virtualized and approximated performance metrics are used to evaluate architectures, reducing the reliance on actual training and thereby saving computational resources.

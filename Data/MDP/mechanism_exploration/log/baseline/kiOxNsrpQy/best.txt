@@ -1,0 +1,3 @@
+Best score: 0.55
+Best idea:
+Create a taxonomy of faithfulness metrics based on theoretical properties and practical relevance, and then empirically test these metrics against human judgments on a set of benchmark graph datasets. This would help in identifying the most effective metrics for specific types of GNN applications.

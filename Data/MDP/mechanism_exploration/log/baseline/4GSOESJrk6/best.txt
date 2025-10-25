@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Create a benchmark dataset specifically designed for evaluating personalized image generation, which includes a wide range of scenarios and user profiles to test the adaptability and accuracy of different generation models.

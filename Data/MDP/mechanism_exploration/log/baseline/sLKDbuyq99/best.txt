@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Establish a modular task decomposition framework in multi-agent systems, where tasks are dynamically broken down or merged based on real-time effectiveness evaluations, allowing the system to adapt to changing operational demands efficiently.

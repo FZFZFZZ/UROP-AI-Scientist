@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Develop a theoretical framework for quantifying and analyzing oversquashing in TDL, incorporating algebraic topology tools to better understand how information is compressed and distorted across different topological structures.

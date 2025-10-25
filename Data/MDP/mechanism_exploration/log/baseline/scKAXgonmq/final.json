@@ -1,0 +1,11 @@
+{
+  "id": "scKAXgonmq",
+  "target_idea": "Our work introduces a text-based approach for CAPE, replacing the need for a support image with a pose-graph where nodes represent keypoints described with text. This method leverages the abstraction of text descriptions and the structure of the graph to improve symmetry breaking, structure preservation, and occlusion handling.",
+  "context": "Conventional 2D pose estimation models are limited to specific object categories, restricting their applicability to predefined objects. Category-agnostic pose estimation (CAPE) emerged to address this limitation by enabling keypoint localization across diverse object categories using a unified model that can generalize from minimal annotated support images. Recent CAPE methods rely on arbitrary keypoint definitions annotated on a user-provided support image.",
+  "initial_idea": "Develop a self-supervised learning framework for category-agnostic pose estimation that uses video sequences instead of static images. By leveraging the temporal consistency in video data, the model can automatically generate and refine keypoints by analyzing the movement and varying orientations of objects across frames. This method circumvents the need for extensive keypoint annotations and improves the model's ability to generalize across novel objects by learning from the naturally occurring variance in object poses over time.",
+  "final_idea": "Apply a multimodal approach to CAPE by integrating visual and textual data in the graph neural network, allowing the model to leverage descriptions or labels associated with keypoints to enhance understanding and localization accuracy.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 63,
+  "elapsed_sec": 814.8738951683044
+}

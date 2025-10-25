@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Employ adaptive sampling techniques in offline RL to enhance data efficiency by selectively sampling from the offline dataset based on uncertainty estimates. This method could reduce the required data volume by focusing on the most informative samples, potentially accelerating the convergence of the learning process.

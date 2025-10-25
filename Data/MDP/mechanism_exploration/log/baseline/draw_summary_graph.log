@@ -1,0 +1,15 @@
+2025-10-25 15:02:14,813 [INFO] Found 350 subdirectories. Scanning final.json ...
+2025-10-25 15:02:17,250 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_final_sim_score.png
+2025-10-25 15:02:19,494 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_explored_total.png
+2025-10-25 15:02:21,738 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_elapsed_sec.png
+2025-10-25 15:02:21,738 [INFO] Done. Logs at: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/draw_summary_graph.log
+2025-10-25 15:03:36,146 [INFO] Found 350 subdirectories. Scanning final.json ...
+2025-10-25 15:03:36,539 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_final_sim_score.png
+2025-10-25 15:03:36,655 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_explored_total.png
+2025-10-25 15:03:36,793 [INFO] [ok] saved: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/baseline_elapsed_sec.png
+2025-10-25 15:03:36,793 [INFO] Done. Logs at: /Users/luhaomeng/Documents/GitHub/UROP-AI-Scientist/Data/MDP/mechanism_exploration/log/baseline/draw_summary_graph.log
+2025-10-25 15:06:24,644 [INFO] ✅ Summary graphs saved successfully!
+2025-10-25 15:09:04,714 [INFO] [ok] saved: baseline_final_sim_score.png
+2025-10-25 15:09:04,858 [INFO] [ok] saved: baseline_explored_total.png
+2025-10-25 15:09:05,009 [INFO] [ok] saved: baseline_elapsed_sec.png
+2025-10-25 15:09:05,009 [INFO] ✅ Summary graphs generated.

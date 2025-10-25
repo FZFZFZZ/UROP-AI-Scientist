@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Create a benchmark suite of real-world datasets across various domains to evaluate the performance of causal discovery algorithms, providing a more comprehensive assessment of their effectiveness in practical applications.

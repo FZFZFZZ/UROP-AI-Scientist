@@ -1,0 +1,11 @@
+{
+  "id": "OhUoTMxFIH",
+  "target_idea": "Introduce Robotouille, a benchmark environment designed to test LLM agents' ability to handle long-horizon asynchronous scenarios, with datasets that present complex planning challenges requiring management of overlapping tasks and interruptions.",
+  "context": "Effective asynchronous planning is crucial for agents that need to manage time delays, reason over diverse long-horizon tasks, and collaborate with other agents. Current benchmarks for large language model agents primarily focus on short-horizon tasks and do not adequately evaluate asynchronous planning capabilities.",
+  "initial_idea": "Develop a benchmark suite specifically for asynchronous planning by creating a simulated environment where agents manage a virtual global supply chain. In this simulation, agents need to optimize logistics, anticipate and react to market changes, coordinate with other agents that control different segments like manufacturing, transportation, or retail, and accommodate unexpected disruptions such as natural disasters or political instability. The environment will feature adjustable parameters for time delays and task complexity to rigorously test the agent's ability to plan over long horizons and collaborate asynchronously with multiple stakeholders.",
+  "final_idea": "Introduce a hierarchical task framework in the simulation environment where agents must complete sub-tasks with independently varying deadlines and dependencies, enhancing the complexity of asynchronous planning and coordination.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 146,
+  "elapsed_sec": 1750.9724249839783
+}

@@ -1,0 +1,3 @@
+Best score: 0.88
+Best idea:
+Design an 'abstract reasoning corpus' with tasks derived from logical, spatial, and mathematical reasoning that are stripped of domain-specific language and context. Models would be tested on this corpus to evaluate their pure reasoning abilities and their performance stability across varied contexts.

@@ -1,0 +1,3 @@
+Best score: 0.9
+Best idea:
+Employ a mixture of Gaussians as the prior, where the components and their parameters are learned dynamically during training, allowing the model to better approximate complex and multimodal target distributions and potentially reduce mode-collapse.

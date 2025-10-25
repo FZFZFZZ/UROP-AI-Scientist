@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Utilize simulation-based training where initial training phases are conducted in simulated environments that require less computational power, reserving high-fidelity, computationally intensive environments for final training stages.

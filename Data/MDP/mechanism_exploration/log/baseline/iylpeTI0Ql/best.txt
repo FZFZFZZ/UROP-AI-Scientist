@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Develop a self-supervised learning component for the TTA model that generates pseudo-labels for target data, using these labels to train a noise discriminator. This discriminator can then be used to refine the adaptation process by focusing on data samples that are most likely to represent the true target distribution.

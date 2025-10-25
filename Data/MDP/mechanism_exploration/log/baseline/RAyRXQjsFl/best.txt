@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Examine the effect of different activation functions on the separation power of equivariant neural networks, integrating this analysis with the influence of network depth and width to provide a comprehensive understanding of model behavior.

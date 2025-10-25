@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Explore the use of attention mechanisms in the 3DGS model that can dynamically focus on relevant features of the input data depending on the viewpoint, potentially allowing the model to better handle the variability introduced by OOD views.

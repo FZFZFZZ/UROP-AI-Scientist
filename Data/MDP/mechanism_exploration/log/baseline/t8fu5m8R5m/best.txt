@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Implement a hybrid model combining unsupervised clustering with supervised adversarial training, where clusters of normal data help define what constitutes an anomaly and adversarial examples are generated based on these clusters. This approach helps in creating a more defined boundary between normal and anomalous states, enhancing detection accuracy.

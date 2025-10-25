@@ -1,0 +1,11 @@
+{
+  "id": "nNYA7tcJSE",
+  "target_idea": "Introduce a novel bidirectional sampling strategy that addresses off-manifold issues without extensive re-noising or fine-tuning by employing sequential sampling along both forward and backward paths, conditioned on start and end frames. This approach ensures coherent and on-manifold generation of intermediate frames, enhanced by advanced guidance techniques CFG++ and DDS, to improve the interpolation process.",
+  "context": "Recent advancements in large-scale text-to-video and image-to-video diffusion models have significantly improved video generation, particularly in keyframe interpolation. However, current image-to-video diffusion models require adaptation for two-frame conditioned generation, which is crucial for effective bounded interpolation. Existing methods that attempt to fuse temporally forward and backward paths in parallel often encounter off-manifold issues, resulting in artifacts or necessitating multiple iterative re-noising steps.",
+  "initial_idea": "Develop a hybrid diffusion model that leverages an adaptive temporal attention mechanism, which dynamically adjusts the influence of forward and backward frames based on the complexity and motion content of the specific scene. This model would use a scene-aware gating mechanism to blend multiple potential pathways, optimizing for the least off-manifold trajectory. By incorporating real-time feedback on frame generation quality, the model could iteratively refine its predictions, potentially reducing artifacts and enhancing the fluidity of the generated video with fewer re-noising steps.",
+  "final_idea": "Develop a dual-pathway architecture that separately optimizes forward and backward diffusion processes using reinforcement learning, allowing the model to dynamically adjust strategies based on intermediate outcomes, thereby minimizing off-manifold artifacts and improving frame interpolation fidelity.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 138,
+  "elapsed_sec": 2056.123612880707
+}

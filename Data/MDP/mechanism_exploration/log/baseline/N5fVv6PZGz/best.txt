@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Develop a hybrid execution framework that allows MoE models to offload certain layers or operations selectively to the CPU or GPU based on their specific computational characteristics and memory demands, thereby enhancing overall system performance.

@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Implement a 3D motion capture system to track the detailed movements of pianists' hands and fingers, using this data to train a deep neural network that can predict optimal finger placements and transitions for various piano pieces.

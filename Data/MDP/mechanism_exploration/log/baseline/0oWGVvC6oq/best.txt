@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Explore the use of information theory to quantify the value of information in sequential decision problems, linking it to the rate of regret reduction and proposing new metrics for evaluating decision-making strategies.

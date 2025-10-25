@@ -1,0 +1,11 @@
+{
+  "id": "iOMnn1hSBO",
+  "target_idea": "Develop a framework using conformal prediction to create prediction sets that consider a downstream decision loss function, enhancing their suitability for high-stakes decision-making. This approach leverages the strengths of conformal methods, such as modularity and statistical coverage guarantees, while integrating downstream decisions and user-specified utility functions.",
+  "context": "There is growing interest in decision-focused machine learning methods that improve performance by considering how predictions are used in downstream optimization problems. Current methods for uncertainty quantification fail to incorporate information about these downstream decisions, which is crucial for high-stakes decision-making.",
+  "initial_idea": "Develop a decision-focused uncertainty quantification framework that integrates counterfactual reasoning directly into the learning process. This framework would use a Bayesian approach to continuously adapt the uncertainty estimates by explicitly simulating alternate decision paths and their outcomes, based on historical decision data. This adaptive method would help learn more robust uncertainty estimates that more accurately reflect the true risks and dependencies in various decision-making scenarios, therefore optimizing outcomes in dynamic, real-world environments.",
+  "final_idea": "Create a modular uncertainty quantification framework that allows for the incorporation of domain-specific decision-making modules. These modules would utilize a combination of Bayesian and frequentist methodologies to adaptively refine uncertainty estimates as more decision outcomes become available, enhancing the precision of decision support in critical areas.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 76,
+  "elapsed_sec": 855.5669710636139
+}

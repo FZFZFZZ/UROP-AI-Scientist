@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Create a physics-informed neural network model specifically designed for surface-based incompressible fluid simulations, which learns from both implicit and mesh-based data, and dynamically adapts its structure to optimize for energy conservation and computational efficiency in real-time simulations.

@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Propose a theoretical framework for analyzing the geometric properties of the Pareto front in MO-MDPs, such as curvature and dimensionality, to provide insights into its complexity and guide the development of more efficient algorithms.

@@ -1,0 +1,11 @@
+{
+  "id": "kGvXIlIVLM",
+  "target_idea": "Propose Condition Contrastive Alignment (CCA) to enable guidance-free AR visual generation by fine-tuning pretrained models to match the desired sampling distribution, eliminating the need for guided sampling and reducing sampling costs.",
+  "context": "Classifier-Free Guidance (CFG) is a technique used to improve the sample quality of visual generative models. In autoregressive (AR) multi-modal generation, CFG creates inconsistencies between language and visual content, which conflicts with the goal of unifying different modalities in visual AR.",
+  "initial_idea": "Develop an Adaptive Multi-Modal Balancing (AMMB) algorithm that dynamically adjusts the input weights of text and image modalities during the generation process of AR models based on real-time analysis of modal consistency. The AMMB algorithm leverages a depth-sensitive attention mechanism that monitors the coherency between text and visuals, tuning the generative process to emphasize the weaker modality until balance is restored. This method aims to enhance CFG by ensuring that the multi-modal outputs maintain a high degree of semantic and contextual alignment throughout the generation process.",
+  "final_idea": "Introduce a Cross-Modal Embedding Space in which both text and image features are projected before generation, allowing for a pre-emptive alignment that could reduce the need for post-hoc corrections typically handled by CFG.",
+  "final_sim_score": 0.65,
+  "rounds_run": 40,
+  "explored_total": 185,
+  "elapsed_sec": 1630.174968957901
+}

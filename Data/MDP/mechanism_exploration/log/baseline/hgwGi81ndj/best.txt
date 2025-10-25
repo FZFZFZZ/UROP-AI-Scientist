@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Develop a reinforcement learning model that employs a hierarchical approach to decision-making, segmenting tasks into sub-goals. This method could facilitate more strategic exploration and efficient learning by reducing the complexity of the decision space at each level.

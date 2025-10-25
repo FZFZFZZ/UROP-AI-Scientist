@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Enhance the diffusion model's capability by integrating a physics-based simulation of light transport in the training process, which could guide the learning of illumination manipulation in a way that respects physical laws and enhances realism, particularly in complex lighting environments.

@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Create a synthetic dataset generator that produces arithmetic word problems with controlled complexity parameters, such as the number of variables, the depth of reasoning required, and the integration of domain-specific knowledge, to systematically test LLMs' problem-solving capabilities.

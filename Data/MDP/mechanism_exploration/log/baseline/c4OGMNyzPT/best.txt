@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Formulate a simulation-based assessment where LVLMs interact with a virtual environment, responding to changes and making decisions based on both visual cues and textual instructions, measuring their adaptability and decision-making skills.

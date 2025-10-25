@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Investigate the efficiency of lightweight, task-specific tuning layers that overlay the core LLM architecture, facilitating rapid adaptation while maintaining the underlying model's integrity and reducing computational overhead.

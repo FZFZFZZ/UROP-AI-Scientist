@@ -1,0 +1,3 @@
+Best score: 0.62
+Best idea:
+Enhance the interpretability of vision-language models by incorporating explainability layers that visualize the contribution of each modality to the final decision-making process, aiding in the debugging and further development of these complex systems.

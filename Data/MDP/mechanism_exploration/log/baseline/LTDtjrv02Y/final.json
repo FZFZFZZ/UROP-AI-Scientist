@@ -1,0 +1,11 @@
+{
+  "id": "LTDtjrv02Y",
+  "target_idea": "Propose an Inverse Graphics Autoencoder (IG-AE) that regularizes an image autoencoder with 3D-geometry by aligning its latent space with jointly trained latent 3D scenes. This method facilitates the integration of NeRFs into the latent space through a latent NeRF training pipeline, implemented as an open-source extension of the Nerfstudio framework.",
+  "context": "In computer vision, pre-trained image autoencoders are commonly used, but the application of inverse graphics in 2D latent spaces remains under-explored. This approach could reduce training and rendering complexity and enable interoperability with other latent-based 2D methods. However, a significant challenge is that inverse graphics cannot be directly applied to image latent spaces due to the absence of underlying 3D geometry.",
+  "initial_idea": "Develop a hybrid model that uses a conventional image autoencoder to embed 2D images into a latent space, then pairs this with a generative adversarial network (GAN) trained specifically to infer pseudo-3D structures from these latent representations. This GAN would be trained separately on a dataset of 2D images paired with their corresponding 3D models to learn how to predict underlying geometries from flat inputs. The synthesized 3D predictions could then be rendered back into 2D images for enhanced realism and detail, effectively allowing 2D-to-3D transformations within the autoencoded latent space and leveraging the efficiency of inverse graphics without needing direct application on traditional 3D models.",
+  "final_idea": "Experiment with a cross-modal training approach where 2D image autoencoders are jointly trained with 3D model datasets, using a shared latent space to enhance the model's ability to understand and reconstruct 3D geometry from 2D inputs.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 118,
+  "elapsed_sec": 1149.4220747947693
+}

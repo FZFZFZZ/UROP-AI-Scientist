@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Design a loss function that incorporates a knowledge distillation component, where the distance between the soft labels of the teacher model and the predictions of the student model is minimized, along with a cross-entropy term for ground truth alignment.

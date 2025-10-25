@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop a transfer learning framework that utilizes auxiliary tasks related to behavioral prediction during the initial training phase on rich neural-behavioral datasets. Subsequently, the model could be adapted to focus solely on neural activity prediction in the target domain, potentially enhancing its predictive accuracy without direct behavioral data.

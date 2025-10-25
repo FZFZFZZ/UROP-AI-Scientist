@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Initiate a cross-validation study that not only compares SGD, RMSprop, and Adam but also introduces newer optimization algorithms like LAMB and RAdam, assessing their effectiveness in training autoregressive models across different computational budgets.

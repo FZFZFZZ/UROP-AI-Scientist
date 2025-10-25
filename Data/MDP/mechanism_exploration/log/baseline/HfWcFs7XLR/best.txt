@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Employ a multi-agent AI framework where different agents are responsible for various storytelling elements, and these agents collaborate to produce a cohesive narrative, simulating a writers' room environment to achieve more nuanced and complex stories.

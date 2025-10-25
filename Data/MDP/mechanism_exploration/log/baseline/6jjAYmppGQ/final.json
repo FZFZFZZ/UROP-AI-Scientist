@@ -1,0 +1,11 @@
+{
+  "id": "6jjAYmppGQ",
+  "target_idea": "Introduce a novel Unsupervised Individual Continual Learning paradigm, called BrainUICL, which allows EEG-based models to continuously adapt to new subjects and absorb new knowledge during each adaptation, thereby enhancing generalization ability for unseen subjects.",
+  "context": "Electroencephalography (EEG) is a non-invasive technology used to record brain electrical activity and is applied in areas such as sleep staging, emotion recognition, and motor imagery. However, existing EEG models struggle to generalize in clinical settings due to individual discrepancies among new patients, as these models are typically trained on fixed datasets and cannot adapt to the continual flow of unseen subjects.",
+  "initial_idea": "Develop an adaptive EEG model using federated learning, where EEG data from multiple clinical sites are used to train a generalized model while maintaining data privacy. Instead of relying on fixed datasets, each new patient’s data contributes to ongoing model training, enabling the model to adjust to individual variances in real time. This approach would enhance the model’s ability to generalize across diverse populations, improving diagnostic accuracy and personalized treatment strategies in clinical environments.",
+  "final_idea": "Create a dynamic learning system that continuously updates its parameters based on incoming EEG data streams, using online learning algorithms to adapt to each new patient's data in real-time, thereby enhancing the model's responsiveness and accuracy in clinical applications.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 44,
+  "elapsed_sec": 876.973640203476
+}

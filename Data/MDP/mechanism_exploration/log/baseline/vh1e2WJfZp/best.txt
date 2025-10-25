@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop a multi-task learning framework within the diffusion model to simultaneously perform image segmentation and edge detection. By sharing representations between these tasks, the model can leverage common features enhancing both the precision of edge delineation and the contextual awareness needed for accurate segmentation.

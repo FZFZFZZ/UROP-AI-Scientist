@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Utilize a multi-task learning framework where the language model not only predicts scalar rewards but also generates explanations for its decisions, thereby training the model to inherently provide interpretable outputs alongside its evaluations.

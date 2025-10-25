@@ -1,0 +1,11 @@
+{
+  "id": "IIVYiJ1ggK",
+  "target_idea": "Introduce Rodimus, a model that uses a data-dependent tempered selection mechanism within a linear attention-based, purely recurrent framework to reduce memory usage while maintaining accuracy. Rodimus+ enhances this by integrating Sliding Window Shared-Key Attention in a hybrid approach, combining semantic, token, and head compression techniques for improved efficiency.",
+  "context": "Recent advancements in Transformer-based large language models have significantly improved natural language processing capabilities. However, these models face challenges due to the high computational costs associated with the classical softmax attention, resulting in a complexity of O(T) for per-token generation, where T is the context length.",
+  "initial_idea": "Develop a transformer-based language model that adopts dynamic context pruning with a focus on semantic relevance detection. This model would use an initial lightweight pass to determine which tokens in the context are most relevant for predicting the next token, subsequently pruning away less relevant tokens to decrease the contextual length T before computing the softmax attention. This approach aims to significantly reduce computational overhead while maintaining or improving the quality of token predictions by focusing computational resources on the most impactful parts of the input sequence.",
+  "final_idea": "Develop a transformer-based language model that adopts dynamic context pruning with a focus on semantic relevance detection. This model would use an initial lightweight pass to determine which tokens in the context are most relevant for predicting the next token, subsequently pruning away less relevant tokens to decrease the contextual length T before computing the softmax attention. This approach aims to significantly reduce computational overhead while maintaining or improving the quality of token predictions by focusing computational resources on the most impactful parts of the input sequence.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 101,
+  "elapsed_sec": 1003.7466161251068
+}

@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Integrate an autoencoder with a GAN to first learn a disentangled representation of facial attributes, which can then be used to guide the GAN in generating faces with controlled variations in identity and attributes.

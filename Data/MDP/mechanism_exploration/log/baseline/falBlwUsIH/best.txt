@@ -1,0 +1,3 @@
+Best score: 0.35
+Best idea:
+Incorporate an ensemble learning strategy into the adaptive OOD detection system to enhance decision-making reliability. By aggregating predictions from multiple self-supervised models, the system can reduce the variance of anomaly scores, leading to more stable and reliable OOD detection in fluctuating operational environments.

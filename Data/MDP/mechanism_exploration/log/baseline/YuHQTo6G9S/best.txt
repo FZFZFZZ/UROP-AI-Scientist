@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop a region-based training protocol for MLLMs, where the model is specifically trained on segmented parts of medical images alongside full images, to improve its ability to distinguish and prioritize regions differently based on the clinical context provided in the textual instructions.

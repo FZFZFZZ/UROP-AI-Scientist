@@ -1,0 +1,11 @@
+{
+  "id": "Ev4iw23gdI",
+  "target_idea": "Introduce Empowering Multi-modal Mamba with Structural and Hierarchical Alignment (EMMA), which enhances MLLM's ability to extract detailed visual information through a pixel-wise alignment module for spatial image-level feature processing and a multi-scale feature fusion (MFF) module for combining visual features from different layers, ensuring both structural and hierarchical alignment.",
+  "context": "Mamba-based architectures have emerged as a promising approach for deep learning models due to their competitive performance and efficient deployment speed. However, existing Mamba multi-modal large language models (MLLM) struggle with extracting visual features effectively, resulting in imbalanced cross-modal alignment between visual and textual data, which adversely affects performance in multi-modal tasks.",
+  "initial_idea": "Develop a hybrid attention mechanism for Mamba multi-modal large language models (MLLM) that dynamically adjusts its focus between modalities based on the semantic complexity and context relevance of input data. This mechanism can utilize a context-aware gating system that decides how much attention to allocate to visual versus textual inputs at each layer of the model, promoting balanced feature extraction and enhancing cross-modal interaction. Additionally, integrate a feedback loop from the output layer that retrospectively adjusts the attention weights based on task performance, enabling continuous improvement in cross-modal alignment throughout training.",
+  "final_idea": "Employ a hierarchical attention system in Mamba MLLMs that operates at multiple scales, allowing the model to dynamically choose between focusing on fine-grained details or broader contextual information within and across modalities. This multi-scale attention could help in better managing the complexity and diversity of features in multi-modal datasets.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 48,
+  "elapsed_sec": 731.5671150684357
+}

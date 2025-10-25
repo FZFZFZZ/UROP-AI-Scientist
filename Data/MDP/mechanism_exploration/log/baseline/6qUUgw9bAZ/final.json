@@ -1,0 +1,11 @@
+{
+  "id": "6qUUgw9bAZ",
+  "target_idea": "Develop an approach that predicts the distribution of rewards based on input and computation budget, allowing for adaptive allocation of computation. This includes an adaptive best-of-k procedure for dynamic sample generation and a routing procedure that chooses between expensive, accurate decoding and cheaper, less capable alternatives.",
+  "context": "Decoding procedures such as search, reranking, and self-critique are computationally intensive but can enhance the quality of language model outputs in tasks like code generation, numerical reasoning, and dialog. Traditionally, the same decoding procedure is applied uniformly to all inputs, regardless of the varying computational needs of different inputs.",
+  "initial_idea": "Introduce a dynamic, adaptive decoding framework that uses an initial lightweight model to predict the complexity and resource needs of each input in real-time. Based on this prediction, the framework dynamically chooses an appropriate decoding strategy from a spectrum ranging from fast and less computationally intensive to slow and more detailed, optimizing both computational efficiency and output quality. This approach not only tailors the decoding procedure to the specific requirements of each input but also can significantly reduce unnecessary computational overhead while maintaining high-quality outputs across diverse tasks.",
+  "final_idea": "Introduce a dynamic, adaptive decoding framework that uses an initial lightweight model to predict the complexity and resource needs of each input in real-time. Based on this prediction, the framework dynamically chooses an appropriate decoding strategy from a spectrum ranging from fast and less computationally intensive to slow and more detailed, optimizing both computational efficiency and output quality. This approach not only tailors the decoding procedure to the specific requirements of each input but also can significantly reduce unnecessary computational overhead while maintaining high-quality outputs across diverse tasks.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 84,
+  "elapsed_sec": 1268.0028541088104
+}

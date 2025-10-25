@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Develop an automated tool that leverages machine learning techniques to dynamically generate and test counterfactual scenarios across diverse demographics, thus scaling bias evaluation for LLMs efficiently and effectively.

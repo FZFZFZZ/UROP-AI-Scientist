@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Create a benchmark that not only assesses the accuracy of LLMs and LVLMs in data interpretation but also evaluates their efficiency and scalability when processing large-scale, heterogeneous datasets from real-world scenarios.

@@ -1,0 +1,11 @@
+{
+  "id": "vf5aUZT0Fz",
+  "target_idea": "Propose a communication-efficient pre-training framework called DEPT, which separates embeddings from the transformer body and allows simultaneous training on multiple data sources without a shared vocabulary. This method reduces token embedding parameters to match the data source vocabulary, cuts communication costs, and enhances the transformer's adaptability and generalization.",
+  "context": "Language model pre-training typically involves using diverse data mixtures to improve performance across various domains and languages. However, this process is resource-intensive and costly due to the significant differences in lexical, syntactic, and semantic aspects of the data sources, which can lead to negative interference known as the 'curse of multilinguality'.",
+  "initial_idea": "Develop a dynamic data filtering method for language model pre-training that leverages real-time performance feedback. The system would analyze the model's incremental learning trajectories and adjust the training corpus composition based on emerging strengths and weaknesses, focusing on balancing domain-specific proficiency and generalization capabilities. This adaptivity would minimize resource waste by tailoring the linguistic diversity of the training data to optimally counteract the curse of multilinguality, thus making pre-training more cost-effective and efficient.",
+  "final_idea": "Implement a modular training approach where different language modules are trained separately and then integrated into a central framework using transfer learning techniques to reduce negative interference and improve computational efficiency.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 99,
+  "elapsed_sec": 907.1091687679291
+}

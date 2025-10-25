@@ -1,0 +1,11 @@
+{
+  "id": "v6iLQBoIJw",
+  "target_idea": "Investigate the feasibility of training neural networks within the dominant subspace by projecting the SGD update onto it, revealing that this approach does not further decrease the training loss, suggesting the alignment is spurious. Additionally, explore the effectiveness of projecting out the dominant subspace, which surprisingly maintains training efficacy across various setups.",
+  "context": "Training deep neural networks is complex due to their high-dimensional nature and intricate loss landscapes. Recent findings indicate that during training, the gradient tends to align with a low-rank top eigenspace of the training loss Hessian, known as the dominant subspace. This alignment raises questions about the potential for more efficient training methods by focusing on this subspace.",
+  "initial_idea": "Create a dynamic subspace training method that adapts the number of dimensions of the dominant subspace in real-time based on convergence criteria. By monitoring changes in the alignment of gradients with the dominant eigenspace, the training algorithm could dynamically increase or decrease its focus on different eigenvalue spectrum regions of the Hessian. This adaptive approach aims to optimize training speed and model performance by concentrating computational resources and adjustments predominantly where they yield the most significant improvements in loss reduction.",
+  "final_idea": "Develop a hybrid optimization strategy that alternates between standard gradient descent and subspace-constrained updates, where the latter involves periodic projection of gradients onto the dominant subspace, aiming to balance exploration and exploitation in the optimization landscape.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 104,
+  "elapsed_sec": 1117.9436659812927
+}

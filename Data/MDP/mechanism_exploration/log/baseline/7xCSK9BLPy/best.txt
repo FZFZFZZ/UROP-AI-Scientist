@@ -1,0 +1,3 @@
+Best score: 0.65
+Best idea:
+Design an ensemble method where multiple LLMs with varied training backgrounds evaluate and score each other’s outputs, using consensus to determine areas needing improvement and iteratively retraining the group.

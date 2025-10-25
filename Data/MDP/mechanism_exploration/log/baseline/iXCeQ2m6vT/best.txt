@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Develop a hierarchical attention system in neural networks that first identifies potential regions of interest through coarse saccadic movements and then refines focus through finer, detail-oriented fixations, similar to the zoom-in approach used by human vision.

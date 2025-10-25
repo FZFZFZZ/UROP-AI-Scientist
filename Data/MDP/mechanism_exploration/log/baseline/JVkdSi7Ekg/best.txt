@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Integrate a context-aware diagnostic tool into robotic systems that leverages VLM and LLM outputs to not only predict but also explain potential failure points in a detailed, understandable manner for human operators.

@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Employ a feature disentanglement strategy in neural radiance fields, separating geometry and appearance features explicitly in the model architecture to allow for independent manipulation and enhancement of geometric detail.

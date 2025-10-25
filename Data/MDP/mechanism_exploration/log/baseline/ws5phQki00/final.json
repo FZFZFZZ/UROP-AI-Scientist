@@ -1,0 +1,11 @@
+{
+  "id": "ws5phQki00",
+  "target_idea": "Utilize LLM-generated synthetic data to enhance stance detection in online political discussions by employing traditional stance detection models for deployment and leveraging LLMs for secure offline synthetic data generation. This involves generating synthetic data with a Mistral-7B model for specific debate questions and fine-tuning models with this data to improve performance. Additionally, by using synthetic data as a reference, the approach identifies and fine-tunes with the most informative samples from an unlabelled dataset to further enhance model performance.",
+  "context": "Stance detection is crucial for enhancing online political discussions, aiding in content moderation, topic summarization, and fostering balanced debates. Traditionally, transformer-based models are used for stance detection, but they require large datasets, which are difficult to gather due to the diverse range of debate topics. Although large language models (LLMs) have revitalized stance detection, their deployment in online discussions is hindered by issues such as inconsistent outputs, biases, and susceptibility to adversarial attacks.",
+  "initial_idea": "Develop a federated learning system for stance detection that enables different online platforms to collaboratively train a shared transformer model while keeping their data localized and private. This approach will capitalize on the diverse user-generated content across platforms without actually sharing the content, thus enriching model training with a broad spectrum of opinions and stances without the traditional risks of data privacy violations. Additionally, incorporate an adversarial training component to enhance the model's robustness against adversarial attacks and reduce bias in stance predictions.",
+  "final_idea": "Utilize natural language generation (NLG) to create synthetic but realistic debate texts for training stance detection models, addressing the issue of scarce data in specific topics. This approach can help in generating a balanced dataset with diverse viewpoints, thus training the model to be more equitable and comprehensive.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 66,
+  "elapsed_sec": 1147.1447479724884
+}

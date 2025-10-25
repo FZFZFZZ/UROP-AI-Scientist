@@ -1,0 +1,11 @@
+{
+  "id": "69Fp4dcmJN",
+  "target_idea": "Develop techniques to scale DP-BandMF, enabling it to handle over a million training iterations and a billion model parameters without degrading utility at smaller scales.",
+  "context": "Correlated noise mechanisms like DP Matrix Factorization (DP-MF) have been effective alternatives to DP-SGD in training scenarios with large epsilon and few epochs. The current state-of-the-art, DP-BandMF, optimally balances privacy amplification and noise correlation but faces severe scalability issues, limiting its application in large-scale training scenarios with extensive iterations and numerous model parameters.",
+  "initial_idea": "Develop a hybrid privacy-preserving algorithm, DP-HybridFactor, which integrates both differential privacy (DP) and homomorphic encryption (HE) specifically tailored for matrix factorization under large-scale conditions. DP-HybridFactor uses homomorphic encryption to securely aggregate gradient updates across multiple parties without revealing individual contributions, thus enhancing privacy beyond what is achievable with DP alone. This approach would mitigate scalability issues of DP-BandMF by allowing secure, parallel computation of encrypted data, reducing the noise needed for maintaining differential privacy and improving model performance with extensive iterations and numerous parameters.",
+  "final_idea": "Integrate a memory-efficient version of DP-BandMF that utilizes sparse matrix operations and efficient data structures to handle large model parameters without significantly increasing computational resources.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 103,
+  "elapsed_sec": 912.8057651519775
+}

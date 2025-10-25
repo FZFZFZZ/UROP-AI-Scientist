@@ -1,0 +1,3 @@
+Best score: 0.65
+Best idea:
+Research the potential of progressive growing of diffusion models, where models are trained incrementally on increasing levels of noise complexity, to systematically build robustness and reduce the inference time required for effective randomized smoothing.

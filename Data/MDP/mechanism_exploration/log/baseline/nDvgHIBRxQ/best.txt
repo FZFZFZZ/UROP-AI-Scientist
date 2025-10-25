@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Establish a benchmark that includes a diverse set of mathematical reasoning tasks, such as proofs, problem generation, and real-world application scenarios, to comprehensively evaluate the breadth and depth of a model's capabilities.

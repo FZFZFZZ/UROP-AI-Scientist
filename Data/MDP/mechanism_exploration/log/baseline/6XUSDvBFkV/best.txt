@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Explore the use of sparse representations in conjunction with binarization, where only the most impactful weights are retained in higher precision and the rest are binarized, aiming to balance model size and performance effectively.

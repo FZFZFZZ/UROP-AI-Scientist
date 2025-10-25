@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Apply a hybrid model combining deep learning for feature extraction from each step with a Markov Decision Process (MDP) framework to evaluate the sequential dependencies and optimize the reward distribution, enhancing the model's ability to handle complex, multi-step scenarios.

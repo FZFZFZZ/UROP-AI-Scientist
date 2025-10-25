@@ -1,0 +1,11 @@
+{
+  "id": "5ck9PIrTpH",
+  "target_idea": "Introduce MathGAP, a data-generation framework that evaluates LLMs on problems with arbitrarily complex arithmetic proofs by generating problem statements and reasoning traces based on specified proof structures, allowing for systematic studies of generalization from easy to hard problems.",
+  "context": "Large language models (LLMs) are proficient at solving arithmetic word problems, but their ability to generalize to more complex problems is not well understood. This is challenging to assess because much of the evaluation data has been seen by the models during training, and existing benchmarks do not adequately capture the complexity of problem proofs.",
+  "initial_idea": "Develop a dynamic benchmark generation system that uses adversarial machine learning techniques to continually produce complex, unseen arithmetic word problems. This system would adaptively evolve in complexity by analyzing the errors and weaknesses in a model's responses. The benchmark would focus on higher-order reasoning, such as problems requiring multiple inferential steps, integration of diverse knowledge bases, and abstract concept application, thus providing a continuously updated understanding of a model’s generalization abilities in solving highly complex arithmetic word problems.",
+  "final_idea": "Create a synthetic dataset generator that produces arithmetic word problems with controlled complexity parameters, such as the number of variables, the depth of reasoning required, and the integration of domain-specific knowledge, to systematically test LLMs' problem-solving capabilities.",
+  "final_sim_score": 0.87,
+  "rounds_run": 40,
+  "explored_total": 141,
+  "elapsed_sec": 1535.1446468830109
+}

@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Construct a dataset based on classical literature with complex narrative structures, such as nested stories or stories within stories, to assess LLM's ability to understand and generate contextually appropriate responses in a sophisticated literary framework.

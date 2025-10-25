@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Implement a transparency-by-design framework in DNN development that mandates the inclusion of causal explanation modules, which can elucidate the decision-making process of the network through causal graphs.

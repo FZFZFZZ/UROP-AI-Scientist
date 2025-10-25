@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Apply a multi-task learning framework where the SSMDE model not only predicts depth but also classifies regions of the image according to their reflectivity, using this classification to guide the depth estimation process more accurately.

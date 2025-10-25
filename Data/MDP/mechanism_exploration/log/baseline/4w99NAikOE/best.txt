@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Introduce a meta-learning approach where a model is trained across various diffusion models to predict and optimize the selection strategy for composing images, using a large dataset annotated with detailed compositional and spatial relationship information.

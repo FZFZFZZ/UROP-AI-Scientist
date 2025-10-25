@@ -1,0 +1,11 @@
+{
+  "id": "cC3LxGZasH",
+  "target_idea": "Propose JEDi, the JEPA Embedding Distance, which utilizes features from a Joint Embedding Predictive Architecture and is measured using Maximum Mean Discrepancy with a polynomial kernel, as a more reliable alternative to FVD for video generation evaluation.",
+  "context": "The Fréchet Video Distance (FVD) is a commonly used metric for assessing the quality of video generation distributions. However, it has several limitations, including the non-Gaussian nature of the I3D feature space, insensitivity to temporal distortions, and the need for impractically large sample sizes for reliable estimation. These issues compromise FVD's reliability as a standalone metric for video generation evaluation.",
+  "initial_idea": "Develop a hybrid evaluation metric that combines modified Fréchet Inception Distance (FID) with a neural predictive model. This hybrid metric would first transform video data into a modified I3D feature space optimized for approximating normal distribution through advanced normalization techniques. Subsequently, a trained recurrent neural network (RNN) would predict subsequent frames based on previous ones, and the prediction accuracy would be integrated into the FVD calculation, thus improving sensitivity to temporal distortions and reducing the need for large sample sizes.",
+  "final_idea": "Develop a hybrid evaluation metric that combines modified Fréchet Inception Distance (FID) with a neural predictive model. This hybrid metric would first transform video data into a modified I3D feature space optimized for approximating normal distribution through advanced normalization techniques. Subsequently, a trained recurrent neural network (RNN) would predict subsequent frames based on previous ones, and the prediction accuracy would be integrated into the FVD calculation, thus improving sensitivity to temporal distortions and reducing the need for large sample sizes.",
+  "final_sim_score": 0.68,
+  "rounds_run": 40,
+  "explored_total": 115,
+  "elapsed_sec": 1779.2892580032349
+}

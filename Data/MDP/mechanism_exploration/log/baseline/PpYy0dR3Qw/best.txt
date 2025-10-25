@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Develop a hybrid approach that combines both model compression and decentralized training techniques, where local models are trained more extensively before performing a compressed global update, thus reducing the frequency and size of data exchanged.

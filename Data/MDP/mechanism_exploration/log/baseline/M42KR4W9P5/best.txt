@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Develop a modular neural network architecture that processes multi-sensor data in parallel, using lightweight, task-specific subnetworks that dynamically interact based on contextual demands, thereby reducing reliance on heavy BEV representations and improving system responsiveness.

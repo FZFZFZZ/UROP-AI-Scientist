@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Investigate the use of variational inference techniques in conjunction with gradient-based methods to estimate and refine causal structures in the presence of latent variables and non-linear relationships.

@@ -1,0 +1,11 @@
+{
+  "id": "nDvgHIBRxQ",
+  "target_idea": "Introduce MathCheck, a checklist designed to test task generalization and reasoning robustness, along with an automatic tool for efficient checklist generation. MathCheck includes various mathematical reasoning tasks and robustness tests, and is used to develop MathCheck-GSM and MathCheck-GEO for evaluating mathematical textual and multi-modal reasoning capabilities, respectively.",
+  "context": "The evaluation of large language models (LLMs) for mathematical reasoning is crucial, yet current benchmarks mainly focus on problem-solving, risking overfitting and failing to accurately measure true mathematical reasoning abilities. There is a need for a comprehensive evaluation method that reflects real-world user experiences and assesses the robustness and generalization of these models across diverse tasks.",
+  "initial_idea": "Develop a dynamic evaluation framework for LLMs focused on mathematical reasoning that adapts the complexity and variety of problems based on the model's performance. This framework could utilize a curated dataset of unsolved or open mathematical problems from various fields, continuously updating and evolving the problem set as the model solves them or as new mathematical theories and problems emerge. Additionally, incorporate user-generated queries and crowd-sourced problem-solving scenarios to evaluate the model's performance in real-time and real-world applicability, ensuring that the model not only learns but also adapts to novel and unstructured mathematical challenges.",
+  "final_idea": "Establish a benchmark that includes a diverse set of mathematical reasoning tasks, such as proofs, problem generation, and real-world application scenarios, to comprehensively evaluate the breadth and depth of a model's capabilities.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 92,
+  "elapsed_sec": 1877.2673118114471
+}

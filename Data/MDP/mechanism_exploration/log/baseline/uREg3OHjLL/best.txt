@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Investigate the role of weight precision in ReLU networks by evaluating how varying levels of decimal precision in weights affect the minimum network depth required to represent functions such as $F_n$, and compare these findings with those of integer-weight networks.

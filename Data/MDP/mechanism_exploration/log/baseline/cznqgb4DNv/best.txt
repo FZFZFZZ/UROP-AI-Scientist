@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a hybrid DFL model that combines both asynchronous and synchronous update mechanisms, allowing clients with higher capabilities to perform more frequent updates, while others follow a less frequent schedule, thus balancing the load and improving overall system performance.

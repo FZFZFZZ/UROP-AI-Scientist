@@ -1,0 +1,11 @@
+{
+  "id": "yitH9xAHQs",
+  "target_idea": "Introduce ReverseGen, a novel approach that automatically generates training samples to expose LLM weaknesses by using a dedicated proposer to create queries that lead models to produce unsatisfactory responses. These queries are used to construct training data, addressing model shortcomings and improving performance across various scales and applications.",
+  "context": "Large language models (LLMs) have achieved impressive performance by training on diverse, high-quality task-specific data. Current methods often depend on human-annotated data or predefined task templates to guide LLMs in generating relevant data for effective training. This reliance on manually designed components may limit the scope of generated data, potentially missing critical edge cases or novel scenarios that could challenge the model.",
+  "initial_idea": "Develop an adaptive data generation framework where large language models dynamically create and refine their own training datasets. This system would use initial performance feedback from a set of core tasks to self-generate novel, task-specific scenarios and challenges, potentially including adversarial examples. By iteratively assessing its performance and adjusting the complexity or diversity of the generated scenarios, the LLM can autonomously discover and learn from edge cases and novel situations without human intervention.",
+  "final_idea": "Introduce an adversarial training component where LLMs are periodically challenged with automatically generated edge cases by a secondary model trained specifically to identify weaknesses in the primary model's data handling, thus continuously improving data diversity and model robustness.",
+  "final_sim_score": 0.9,
+  "rounds_run": 40,
+  "explored_total": 148,
+  "elapsed_sec": 1565.1395800113678
+}

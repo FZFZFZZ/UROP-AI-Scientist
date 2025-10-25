@@ -1,0 +1,11 @@
+{
+  "id": "MnJzJ2gvuf",
+  "target_idea": "Introduce MAVIS, a MAthematical VISual instruction tuning pipeline for MLLMs, featuring an automatic data engine to generate mathematical visual datasets without human intervention. This includes two datasets, MAVIS-Caption and MAVIS-Instruct, and a four-stage training process to enhance diagram visual encoding, vision-language alignment, problem-solving skills, and CoT reasoning capabilities.",
+  "context": "Multi-modal Large Language Models (MLLMs) have shown strong performance in general visual tasks, but their mathematical capabilities, particularly in visual encoding of math diagrams, diagram-language alignment, and chain-of-thought reasoning, remain under-explored. There is a need for an effective training paradigm and a comprehensive dataset with detailed CoT rationales, which is difficult and costly to create manually.",
+  "initial_idea": "Develop a synthetic data generation framework for MLLMs that uses generative adversarial networks (GANs) to create realistic math-related diagrams and corresponding textual descriptions. This framework would automatically generate diverse math diagrams (e.g., geometry figures, algebraic graphs) along with natural language problems and detailed chain-of-thought rationales. Leveraging the adversarial nature, the framework would iteratively refine the diagram-text alignment and the linguistic quality of explanations, thereby generating a large-scale, high-quality dataset for training MLLMs without the extensive cost of manual creation.",
+  "final_idea": "Develop a synthetic data generation framework for MLLMs that uses generative adversarial networks (GANs) to create realistic math-related diagrams and corresponding textual descriptions. This framework would automatically generate diverse math diagrams (e.g., geometry figures, algebraic graphs) along with natural language problems and detailed chain-of-thought rationales. Leveraging the adversarial nature, the framework would iteratively refine the diagram-text alignment and the linguistic quality of explanations, thereby generating a large-scale, high-quality dataset for training MLLMs without the extensive cost of manual creation.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 69,
+  "elapsed_sec": 937.0884189605713
+}

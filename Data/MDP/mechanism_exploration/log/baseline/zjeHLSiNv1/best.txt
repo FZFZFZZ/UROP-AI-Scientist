@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Develop a hybrid MoE model that combines both dense and sparse sub-networks, where critical parameters are processed in high-speed cache memory to expedite inference, while less critical data is handled in slower, more economical storage.

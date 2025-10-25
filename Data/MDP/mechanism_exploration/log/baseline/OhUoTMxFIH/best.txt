@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Introduce a hierarchical task framework in the simulation environment where agents must complete sub-tasks with independently varying deadlines and dependencies, enhancing the complexity of asynchronous planning and coordination.

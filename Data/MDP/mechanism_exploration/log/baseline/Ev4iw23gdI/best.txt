@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Employ a hierarchical attention system in Mamba MLLMs that operates at multiple scales, allowing the model to dynamically choose between focusing on fine-grained details or broader contextual information within and across modalities. This multi-scale attention could help in better managing the complexity and diversity of features in multi-modal datasets.

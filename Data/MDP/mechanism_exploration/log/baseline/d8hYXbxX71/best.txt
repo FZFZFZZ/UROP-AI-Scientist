@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Construct a dynamic programming model to quantitatively compare the long-term effects of Rawlsian and utilitarian policies, incorporating variables such as economic growth, demographic changes, and technological advancements.

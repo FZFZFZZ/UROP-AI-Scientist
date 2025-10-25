@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Utilize propensity score matching to compare outcomes among similar individuals who started treatment at different times, thereby isolating the effect of treatment timing on the progression of HIV without developing AIDS.

@@ -1,0 +1,11 @@
+{
+  "id": "2ea5TNVR0c",
+  "target_idea": "Introduce EURUS, a suite of LLMs optimized for reasoning, finetuned from existing models and achieving state-of-the-art results. The key innovation is ULTRAINTERACT, a large-scale, high-quality dataset designed for complex reasoning tasks, which supports supervised fine-tuning, preference learning, and reward modeling. This dataset includes reasoning chains, multi-turn interaction trajectories, and pairwise responses, enabling a novel reward modeling objective that improves performance in reasoning tasks.",
+  "context": "Large language models (LLMs) are increasingly used for tasks requiring reasoning, such as mathematics, code generation, and logical reasoning. However, achieving state-of-the-art performance in these areas remains challenging, particularly when compared to proprietary models like GPT-3.5 Turbo. The effectiveness of these models often depends on the quality and specificity of the training data used, especially for complex reasoning tasks.",
+  "initial_idea": "Develop an adaptive training protocol for LLMs where the model dynamically identifies its weaknesses in reasoning tasks through self-assessment mechanisms. During training, the model generates a set of reasoning problems, attempts to solve them, and then analyzes its performance to identify areas of weakness. This feedback loop informs subsequent training phases by automatically adjusting the emphasis on certain types of reasoning problems or by integrating targeted auxiliary training modules that focus on specific reasoning skills and strategies.",
+  "final_idea": "Enhance training datasets with structured reasoning paths, where not just the final answers but also the intermediate steps are included, to teach LLMs the process of reasoning rather than just the outcome, improving their ability to generalize across different reasoning contexts.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 72,
+  "elapsed_sec": 921.8831551074982
+}

@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop a method that decomposes language model behavior into a series of "micro-decisions" based on simpler decision-making modules, called Decision Elements (DEs), that each capture specific, understandable linguistic or cognitive functions. These DEs would be systematically derived from the language model by applying constrained factorization techniques to isolate dependencies and effects that individual neural network components (like specific layers, neurons, or groups of neurons) have on output decisions. This modular approach allows the construction of a decision tree where each path and node are labeled with human-readable explanations of the DEs involved, dramatically enhancing interpretability while maintaining model performance.

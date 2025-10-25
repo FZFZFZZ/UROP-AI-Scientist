@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Implement a dual-training mechanism where the SOMs and the deep neural network are trained simultaneously but with different learning rates and loss functions, allowing for a more balanced integration and reduced performance degradation.

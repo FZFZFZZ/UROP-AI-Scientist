@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a specialized set of lightweight transformer models specifically designed for use with homomorphic encryption, focusing on reducing model complexity and computational overhead while maintaining adequate performance for personalized responses.

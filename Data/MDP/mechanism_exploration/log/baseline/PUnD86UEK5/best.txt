@@ -1,0 +1,3 @@
+Best score: 0.65
+Best idea:
+Propose a geometric approach to understanding the convergence of Adam and SGD by analyzing the trajectory of updates in a Riemannian manifold setting. This perspective could provide deeper insights into the dynamics of each optimizer in navigating complex loss landscapes.

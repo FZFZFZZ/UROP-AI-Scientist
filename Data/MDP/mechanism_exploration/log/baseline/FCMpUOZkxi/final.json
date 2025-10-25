@@ -1,0 +1,11 @@
+{
+  "id": "FCMpUOZkxi",
+  "target_idea": "Propose an Adaptive and Universal Primal-Dual algorithm (AUPD) that achieves strong regret performance in CBwK settings. AUPD is designed to balance reward maximization and budget consumption through an adaptive budget-aware approach, utilizing the Lyapunov drift method for analyzing budget consumption and refining the analysis of cumulative variance.",
+  "context": "Stochastic contextual bandits with knapsack constraints (CBwK) involve a learner who observes a context, takes an action, receives a reward, and incurs a vector of costs in each round. The goal is to maximize cumulative rewards over a series of rounds while adhering to knapsack constraints with a given budget. This problem is particularly challenging in the small budget regime where the budget is proportional to the square root of the number of rounds.",
+  "initial_idea": "Develop a hybrid reinforcement learning approach that integrates meta-learning for the CBwK problem. The approach would utilize a meta-learner that specializes in quick adaptation to various budget constraints and reward distributions across different contexts. By sharing and generalizing learning across multiple similar CBwK tasks, the system can effectively learn optimal strategies even under stringent, small budget conditions, enhancing its performance by predicting and adapting to the most cost-effective actions swiftly.",
+  "final_idea": "Develop a regret minimization strategy specific to CBwK that dynamically adjusts exploration and exploitation based on the remaining budget and observed cost distributions. This approach would focus on minimizing long-term regret by balancing the need to explore new actions with the risk of budget depletion.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 121,
+  "elapsed_sec": 1273.6094930171967
+}

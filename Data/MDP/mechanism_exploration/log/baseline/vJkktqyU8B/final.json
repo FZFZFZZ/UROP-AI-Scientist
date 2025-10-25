@@ -1,0 +1,11 @@
+{
+  "id": "vJkktqyU8B",
+  "target_idea": "Propose META, a ViT adapter that enhances memory efficiency and reduces memory time consumption by minimizing inefficient memory access operations. It features a memory-efficient adapter block that shares layer normalization between self-attention and feed-forward network layers, employs cross-shaped self-attention to reduce reshaping operations, and includes a lightweight convolutional branch to enhance local inductive biases for dense prediction tasks.",
+  "context": "Current Vision Transformer (ViT) adapter methods, while achieving promising accuracy, suffer from inefficient memory access operations such as standard normalization and frequent reshaping, which hinder inference speed.",
+  "initial_idea": "Develop a specialized hardware acceleration module for Vision Transformers that optimizes memory access patterns specifically for ViT operations, such as normalizations and tensor reshaping. This module can be integrated into existing neural network processing units and uses a dynamic caching mechanism that predicts and pre-loads the data needed for upcoming operations based on common ViT computational paths. Additionally, incorporate a lightweight algorithm that adaptively reorganizes data storage and memory layout in real-time to minimize latency and maximize throughput during inference.",
+  "final_idea": "Propose a new architectural design for ViTs that integrates memory-efficient normalization and reshaping directly into the network architecture, allowing for streamlined data flow and reduced memory overhead.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 119,
+  "elapsed_sec": 1213.1529541015625
+}

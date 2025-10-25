@@ -1,0 +1,11 @@
+{
+  "id": "dj0TktJcVI",
+  "target_idea": "Propose a method to finetune only the attention modules in the Transformer, which improves weight disentanglement by leveraging their kernel behavior. This approach differentiates the roles of the representation module and task-specific modules, highlighting the importance of the representation module in enhancing weight disentanglement.",
+  "context": "Task arithmetic has gained attention for its ability to combine fine-tuned weights of various tasks into a unified model without additional training, offering efficiency and cost-effectiveness. However, this approach can cause interference from unrelated tasks due to a lack of weight disentanglement. Neural Tangent Kernel (NTK) linearization has been used to address this issue, but it increases training costs and reduces individual model performance.",
+  "initial_idea": "Develop a dynamic task embedding system integrated with Task Arithmetic and NTK linearization, where embeddings are learned for each task and used to modulate the influence of that task's parameters during the combination process. These task-specific embeddings could control the degree of weight sharing and adjustment dynamically based on task similarity and relevance, assessed through online meta-learning techniques. This approach aims to reduce task interference and maintain high individual task performance by fine-tuning the balance between task integration and separation during model unification.",
+  "final_idea": "Explore the development of a hybrid attention mechanism that integrates task-specific gating with global attention layers, enabling selective enhancement or suppression of task features based on real-time performance metrics.",
+  "final_sim_score": 0.68,
+  "rounds_run": 40,
+  "explored_total": 156,
+  "elapsed_sec": 1397.0999658107758
+}

@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Explore the development of a hybrid attention mechanism that integrates task-specific gating with global attention layers, enabling selective enhancement or suppression of task features based on real-time performance metrics.

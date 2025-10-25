@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Conduct a theoretical analysis on the impact of game topology and interdependencies among players on the complexity of computing Nash equilibria in two-team polymatrix games, aiming to establish new complexity classes or bounds.

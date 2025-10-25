@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Enhance training datasets with structured reasoning paths, where not just the final answers but also the intermediate steps are included, to teach LLMs the process of reasoning rather than just the outcome, improving their ability to generalize across different reasoning contexts.

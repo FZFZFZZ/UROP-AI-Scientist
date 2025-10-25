@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Utilize a contrastive learning framework to explicitly align the embeddings of image regions and corresponding textual descriptions at multiple resolutions, thus improving the model's ability to generalize from seen to unseen lesion types.

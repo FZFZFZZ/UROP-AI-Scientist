@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Introduce a regularization term specifically designed for the cosine router in MoE that penalizes the divergence in expert performance, aiming to stabilize learning and reduce the variance in parameter estimates across different tasks.

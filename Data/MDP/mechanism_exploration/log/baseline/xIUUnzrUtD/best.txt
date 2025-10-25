@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Enhance sequence models with a memory-augmented neural network that can store and retrieve abstract patterns, facilitating better transfer and application of learned patterns to new sequences.

@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Explore the integration of semantic understanding in diffusion models by embedding language models that can interpret and generate human-object interactions based on textual descriptions, thereby bridging the gap between visual and linguistic modalities.

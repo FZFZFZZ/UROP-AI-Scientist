@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a dual-stream training architecture where one stream focuses on deep knowledge encoding using domain-specific corpora, and the other stream simultaneously manages task-oriented training. This structure ensures continuous cross-pollination between the streams, enhancing the model's ability to integrate and apply knowledge.

@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Introduce a regularization term in the ranking algorithm that penalizes large differences in centrality scores among nodes within the same community, aiming to preserve community structure while maintaining overall ranking integrity.

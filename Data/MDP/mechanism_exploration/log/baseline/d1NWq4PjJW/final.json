@@ -1,0 +1,11 @@
+{
+  "id": "d1NWq4PjJW",
+  "target_idea": "Introduce a general Riemannian Batch Normalization (RBN) framework on gyrogroups, called GyroBN, which ensures theoretical control over sample statistics through concepts like pseudo-reduction and gyroisometric gyrations. GyroBN integrates various existing normalization methods and is applicable to different geometries, including Grassmannian and hyperbolic spaces.",
+  "context": "In machine learning, several Riemannian manifolds, such as Symmetric Positive Definite (SPD), Grassmann, spherical, and hyperbolic manifolds, have been shown to support gyro structures. This allows for the extension of Euclidean Deep Neural Networks (DNNs) to these manifolds, which is a significant challenge due to the non-Euclidean nature of these spaces.",
+  "initial_idea": "Develop a hybrid deep learning model that dynamically selects between Euclidean and non-Euclidean layers based on the data distribution's intrinsic geometry. This model would use an adaptive routing mechanism to decide, during training and inference, whether information should pass through Euclidean, SPD, Grassmann, spherical, or hyperbolic layers. This approach could potentially improve model performance on heterogeneous datasets containing a mix of linear and non-linear structures by optimizing the geometry of the data processing pathway.",
+  "final_idea": "Propose a manifold-adaptive batch normalization method that scales and shifts learned representations according to the local geometry of the data manifold, potentially reducing internal covariate shift in manifold-structured data.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 101,
+  "elapsed_sec": 1308.0215799808502
+}

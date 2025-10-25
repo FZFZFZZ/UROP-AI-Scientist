@@ -1,0 +1,11 @@
+{
+  "id": "nsCOeCLR8e",
+  "target_idea": "Propose the DynFrs framework to enable efficient machine unlearning in Random Forests while maintaining predictive accuracy. DynFrs uses the subsampling method Occ(q) to limit the impact of deleting samples and the lazy tag strategy Lzy to delay tree node reconstruction, making it adaptable to any Random Forest variant.",
+  "context": "Random Forests are effective in classification and regression tasks across various domains like medical diagnosis, finance, and personalized recommendations. These areas are sensitive to privacy concerns due to the involvement of personal and confidential data. With regulations such as GDPR and CCPA emphasizing the right to be forgotten, the need for machine unlearning in Random Forests has become critical. However, existing methods face challenges in practical application.",
+  "initial_idea": "Develop a \"Privacy-Preserving Dynamic Random Forest\" model that incorporates differential privacy directly into tree construction and utilizes a data decay mechanism based on time-sensitive tokens linked to user consent. In this model, each decision tree in the forest will include nodes that gradually \"forget\" data by adjusting the impurity calculations, reflecting the expiration or withdrawal of consent. This approach will allow for real-time compliance with privacy regulations, enabling the model to mechanically adjust the decision boundaries as data permissions change.",
+  "final_idea": "Develop an incremental learning and unlearning framework for Random Forests that allows for dynamic updating of models as new data comes in or when data needs to be forgotten, focusing on minimizing the retraining cost and maintaining model accuracy.",
+  "final_sim_score": 0.85,
+  "rounds_run": 40,
+  "explored_total": 92,
+  "elapsed_sec": 1117.3052620887756
+}

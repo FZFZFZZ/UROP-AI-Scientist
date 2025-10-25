@@ -1,0 +1,3 @@
+Best score: 0.65
+Best idea:
+Utilize a context-aware adaptive learning protocol in LLMs that detects the type of query (subjective or objective) and adjusts the influence of user preferences accordingly, ensuring that factual content is prioritized when necessary.

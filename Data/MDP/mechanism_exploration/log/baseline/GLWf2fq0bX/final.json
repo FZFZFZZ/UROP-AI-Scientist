@@ -1,0 +1,11 @@
+{
+  "id": "GLWf2fq0bX",
+  "target_idea": "Introduce Parametric Skill Expansion and Composition (PSEC), a framework that iteratively evolves agents' capabilities by maintaining a skill library. This library integrates skill primitives as Low-Rank Adaptation (LoRA) modules for parameter-efficient finetuning, allowing flexible skill expansion and direct skill compositions by merging LoRA modules. Additionally, a context-aware module dynamically activates different skills to collaboratively address new tasks.",
+  "context": "Humans are adept at reusing prior knowledge to tackle new challenges and develop skills while solving problems. This approach is increasingly popular in creating autonomous agents that can self-evolve like humans. However, existing methods struggle with training efficiency when expanding new skills and do not fully utilize prior knowledge to aid in learning new tasks.",
+  "initial_idea": "Develop a meta-learning algorithm that utilizes a dynamic memory-augmentation approach, where the autonomous agent stores distinct experiences as modular memories. Each memory module can be selectively activated based on similarity to current challenges, allowing the agent to construct hybrid strategies that blend various pieces of prior knowledge for new problems. This system could adaptively reconfigure the interconnections between memory modules based on feedback from new experiences, optimizing knowledge reuse and accelerating skill acquisition in diverse domains.",
+  "final_idea": "Develop a meta-learning algorithm that utilizes a dynamic memory-augmentation approach, where the autonomous agent stores distinct experiences as modular memories. Each memory module can be selectively activated based on similarity to current challenges, allowing the agent to construct hybrid strategies that blend various pieces of prior knowledge for new problems. This system could adaptively reconfigure the interconnections between memory modules based on feedback from new experiences, optimizing knowledge reuse and accelerating skill acquisition in diverse domains.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 111,
+  "elapsed_sec": 1208.9897978305817
+}

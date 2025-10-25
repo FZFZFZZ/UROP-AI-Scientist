@@ -1,0 +1,11 @@
+{
+  "id": "dOAkHmsjRX",
+  "target_idea": "Propose using floating point operations (FLOPs) and total memory size in bytes as standardized metrics for computational and memory budgets to enable fair comparison and development of CL algorithms. Introduce adaptive layer freezing to reduce computational costs by not updating layers for less informative batches, and a memory retrieval method to learn efficiently with fewer iterations.",
+  "context": "Online continual learning (CL) often involves single-epoch training and limits on replay memory size, leading to varied computational demands across different CL algorithms. Additionally, the storage costs associated with storing logits or models alongside replay memory are frequently overlooked, complicating fair comparisons among CL algorithms due to differing computational and storage budgets.",
+  "initial_idea": "Develop a dynamic resource allocation framework for online continual learning that adjusts computational and storage resources in real-time based on the learning task's complexity and temporal importance. This framework would use a predictive model to forecast resource needs and prioritize allocation based on predicted future utility of the data, allocating more resources to learn complex concepts or during periods of high data novelty. Additionally, the system could implement a tiered storage solution, where less frequently used data is compressed or moved to slower, cheaper storage options automatically, optimizing the balance between computational load and storage costs.",
+  "final_idea": "Establish a benchmarking protocol for continual learning algorithms that includes standardized metrics for computational and storage efficiency. This protocol would help in evaluating the performance of different continual learning approaches under uniform resource constraints, promoting fair comparisons and encouraging the development of more resource-efficient algorithms.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 95,
+  "elapsed_sec": 1203.504374742508
+}

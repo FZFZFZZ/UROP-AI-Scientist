@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Create a specialized dataset featuring a wide array of numerical formats and contexts, from simple arithmetic to complex real-world data analysis scenarios, to rigorously test the LLMs' versatility in numerical understanding.

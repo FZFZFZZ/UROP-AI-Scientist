@@ -1,0 +1,11 @@
+{
+  "id": "kiOxNsrpQy",
+  "target_idea": "Demonstrate that existing faithfulness metrics are not interchangeable and can overlook important explanation properties. Prove that optimizing for faithfulness is not always beneficial, especially for injective regular GNN architectures, and explore the relationship between architectural choices and faithfulness, highlighting its connection to out-of-distribution generalization.",
+  "context": "Graph Neural Networks (GNNs) are increasingly used, necessitating reliable tools to explain their predictions. A key requirement for these explanations is faithfulness, meaning they accurately reflect the GNN's reasoning process. However, multiple faithfulness metrics exist, leading to confusion about what constitutes faithfulness and how to achieve it.",
+  "initial_idea": "Develop a meta-GNN framework designed specifically to assess and cross-validate the faithfulness of different GNN explanation techniques. The meta-GNN would be trained on a dataset comprising various GNN models' outputs along with the corresponding, expert-labeled explanations, evaluating how well each explanation matches the labeled \"true\" model reasoning. This not only provides a standardized metric of faithfulness but also highlights the strengths and weaknesses of each explanation method across different types of graph-based data.",
+  "final_idea": "Create a taxonomy of faithfulness metrics based on theoretical properties and practical relevance, and then empirically test these metrics against human judgments on a set of benchmark graph datasets. This would help in identifying the most effective metrics for specific types of GNN applications.",
+  "final_sim_score": 0.55,
+  "rounds_run": 40,
+  "explored_total": 118,
+  "elapsed_sec": 1702.6301839351654
+}

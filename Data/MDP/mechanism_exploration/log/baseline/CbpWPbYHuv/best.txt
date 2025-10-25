@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Design a transformer where the activation functions are parameterized using polynomial approximations of solutions to differential equations, which can be optimized directly during training to better fit complex data patterns, thus enhancing model capacity.

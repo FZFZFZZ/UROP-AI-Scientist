@@ -1,0 +1,11 @@
+{
+  "id": "L14sqcrUC3",
+  "target_idea": "Introduce TabReD, a collection of eight industry-grade tabular datasets, to reassess tabular ML models and techniques under conditions that include time-based data splits and richer feature sets, revealing different method rankings compared to traditional academic benchmarks.",
+  "context": "In the transition from academic success to practical deployment, machine learning methods often face challenges due to differences between benchmark datasets and real-world data. Two common issues in industrial applications are the distribution drift over time and the complexity of data acquisition and feature engineering pipelines, which are not adequately represented in typical academic tabular datasets.",
+  "initial_idea": "Develop an adaptive machine learning framework that integrates continuous online learning with automated data acquisition pipeline optimization. The system would utilize real-time feedback on model performance and data quality to dynamically adjust data ingestion, preprocessing, and feature engineering processes. This will be designed to both anticipate and react to distribution drift, ensuring the model remains robust and effective in varying operational environments.",
+  "final_idea": "Launch an open-source repository of continuously updated datasets that reflect current industrial challenges, including timestamped data entries to study temporal drifts, and encourage the community to contribute by adding more varied data scenarios.",
+  "final_sim_score": 0.75,
+  "rounds_run": 40,
+  "explored_total": 197,
+  "elapsed_sec": 1642.3590631484985
+}

@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop a "Language Model Phylogenetics" approach where computational techniques from evolutionary biology are adapted to trace the development and variation among different generations of LLMs. By reconstructing a "phylogenetic tree" of LLMs using training metadata, model parameters, and performance metrics, researchers can infer the lineage and evolutionary pressures that led to specific model capabilities and characteristics. This technique would allow for more precise predictions of model behavior based on observed historical evolution patterns in the LLM ecosystem.

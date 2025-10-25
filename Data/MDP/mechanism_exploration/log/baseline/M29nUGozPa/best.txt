@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a hierarchical pre-training approach for SMILES language models that operates at multiple levels of molecular granularity, such as atoms, functional groups, and entire molecular motifs. This method would use a multi-task learning framework that simultaneously learns to predict the presence and type of individual components and their higher-order interactions, enhancing the model's ability to understand complex molecular relationships and properties. Additionally, integrate a "molecular cloze" mechanism where both random and chemically relevant substructures are masked during training, encouraging the model to better infer molecular characteristics in a manner more consistent with how these models are used during inference.

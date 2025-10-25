@@ -1,0 +1,11 @@
+{
+  "id": "GlAeL0I8LX",
+  "target_idea": "Introduce the Quadratic Programming Enhanced Model (QPM), which learns globally interpretable class representations by using a binary assignment of a few features per class. This assignment is determined through discrete optimization based on similarity measures and interpretability constraints, allowing for easily comparable contrastive class representations.",
+  "context": "In safety-critical situations, understanding the classifications made by deep neural networks is crucial. While recent models can explain individual decisions locally, providing a comprehensive global explanation of a model's overall behavior remains a challenging task.",
+  "initial_idea": "Develop a continuous mapping framework that overlays the operational domain of a safety-critical system with a neural network’s decision manifold, visually linking specific regions of the input space to model decisions. This framework would use interactive, high-resolution, dimensionality-reduced visualizations to help operators and engineers observe and understand global behavioral trends and anomalies in real-time. Such a tool could dynamically illustrate how incremental changes in the input space affect overall model behavior, significantly enhancing global interpretability and reliability.",
+  "final_idea": "Incorporate a rule-extraction algorithm that translates the behaviors of deep neural networks into human-readable rules or guidelines. This algorithm would analyze the network layers to derive comprehensive sets of decision rules, making the model's operations transparent and understandable in critical applications.",
+  "final_sim_score": 0.65,
+  "rounds_run": 40,
+  "explored_total": 123,
+  "elapsed_sec": 1324.7917928695679
+}

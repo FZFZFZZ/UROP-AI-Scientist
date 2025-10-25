@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Propose a dual-network architecture where one network learns the optimal transport problem and another approximates the reference process, specifically designed for handling the Schrödinger Bridge problem in graph-based domains.

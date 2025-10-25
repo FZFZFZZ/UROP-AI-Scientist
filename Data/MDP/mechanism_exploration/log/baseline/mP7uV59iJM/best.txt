@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Utilize depth estimation techniques to enrich the scene representation used for pose estimation. Integrating depth maps with traditional RGB data could provide additional geometric cues that help disambiguate complex scenes and improve the precision of the pose estimation.

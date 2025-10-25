@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Employ a statistical manifold approach where local geometric properties of image representations are treated as points on a manifold, and their distances are measured using information geometry to provide a comprehensive comparison.

@@ -1,0 +1,11 @@
+{
+  "id": "f65RuQgVlp",
+  "target_idea": "Propose an uncertainty-aware memory-based approach to address catastrophic forgetting in an online scenario with streaming data. This method uses a Bregman Information-based estimator to compute model variance at the sample level, allowing for the retrieval and retraining on specific samples to mitigate forgetting while ensuring data confidentiality and communication efficiency.",
+  "context": "Federated Continual Learning (FCL) is increasingly studied for its ability to handle more realistic and dynamic problems. A significant challenge in this area is catastrophic forgetting, where models tend to prioritize recent tasks at the expense of previously learned knowledge. Current solutions often rely on generative-based methods, which require multiple training epochs and are typically designed for vision tasks, operating in an offline setting with static datasets.",
+  "initial_idea": "Develop a hybrid approach to Federated Continual Learning (FCL) that combines sparsity-driven learning techniques with differential privacy mechanisms. Specifically, integrate dynamically adjustable sparsity masks that selectively activate different subsets of the model's parameters for each task, therefore preserving task-specific knowledge without large-scale parameter updates. Simultaneously, employ differential privacy to ensure that the updates comply with data privacy standards, enhancing the model's ability to generalize across multiple decentralized clients without compromising sensitive information.",
+  "final_idea": "Implement a rehearsal-based strategy in Federated Continual Learning by storing a small subset of representative data from previous tasks on decentralized nodes. This data can be used for periodic retraining, helping the model refresh old knowledge without needing extensive data transmission, thus preserving bandwidth and enhancing privacy.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 81,
+  "elapsed_sec": 870.6401851177216
+}

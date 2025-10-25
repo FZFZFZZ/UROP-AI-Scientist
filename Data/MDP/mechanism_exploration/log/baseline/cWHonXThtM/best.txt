@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Develop a universal knowledge distillation framework for image super-resolution that utilizes meta-learning to adapt its parameters to different teacher-student architectures, enhancing the flexibility and efficiency of the distillation process across various models and datasets.

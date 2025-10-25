@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Integrate transfer learning with Bayesian optimization by leveraging pre-trained models on similar tasks to initialize the surrogate model, enhancing the efficiency and accuracy of the gradient estimation process in hard-label attacks.

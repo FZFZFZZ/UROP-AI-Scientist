@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Design a comparative study to evaluate the effectiveness of different LLM architectures (e.g., Transformer, LSTM) in detecting anomalies in time series, examining their ability to generalize from minimal examples and adapt to diverse anomaly types.

@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Develop a regret minimization strategy specific to CBwK that dynamically adjusts exploration and exploitation based on the remaining budget and observed cost distributions. This approach would focus on minimizing long-term regret by balancing the need to explore new actions with the risk of budget depletion.

@@ -1,0 +1,11 @@
+{
+  "id": "HfWcFs7XLR",
+  "target_idea": "Introduce Agents' Room, a generation framework inspired by narrative theory that breaks down narrative writing into subtasks handled by specialized agents, along with a new dataset and evaluation framework for long narratives.",
+  "context": "Writing compelling fiction involves multiple elements such as plot development, character creation, and the use of evocative language. Large language models have potential in story writing but are currently limited by their dependence on complex prompting, which restricts their usability.",
+  "initial_idea": "Develop an AI-driven tool that dynamically collaborates with users to write fiction by progressively learning their writing style and thematic preferences. This tool would use an initial set of user-provided cues such as genre, plot ideas, and character sketches to generate a base narrative. Over time, as the user edits and provides feedback on the AI-generated content, the system refines its understanding and output, essentially co-creating more personalized and contextually rich stories.",
+  "final_idea": "Employ a multi-agent AI framework where different agents are responsible for various storytelling elements, and these agents collaborate to produce a cohesive narrative, simulating a writers' room environment to achieve more nuanced and complex stories.",
+  "final_sim_score": 0.87,
+  "rounds_run": 40,
+  "explored_total": 113,
+  "elapsed_sec": 958.8866150379181
+}

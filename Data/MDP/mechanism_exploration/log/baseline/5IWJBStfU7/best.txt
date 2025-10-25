@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Implement a constraint-based optimization technique that incorporates prior domain knowledge to guide the MI process, potentially leading to a unique and more accurate explanation by aligning the model's behavior with known causal relationships.

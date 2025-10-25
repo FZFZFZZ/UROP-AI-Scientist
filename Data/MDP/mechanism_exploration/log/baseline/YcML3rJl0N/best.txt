@@ -1,0 +1,3 @@
+Best score: 0.78
+Best idea:
+Explore the use of information-theoretic measures such as mutual information to regularize the uncertainty estimates in Evidential Deep Learning, ensuring that the model preserves useful uncertainty without becoming overly confident.

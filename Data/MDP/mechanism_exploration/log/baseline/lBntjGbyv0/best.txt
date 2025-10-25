@@ -1,0 +1,3 @@
+Best score: 0.85
+Best idea:
+Develop an adaptive compression framework using tensor train decomposition for language models, which dynamically adjusts the rank based on real-time memory availability and computational constraints, ensuring optimal performance across devices.

@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Implement a rehearsal-based strategy in Federated Continual Learning by storing a small subset of representative data from previous tasks on decentralized nodes. This data can be used for periodic retraining, helping the model refresh old knowledge without needing extensive data transmission, thus preserving bandwidth and enhancing privacy.

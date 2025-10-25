@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Apply a multimodal approach to CAPE by integrating visual and textual data in the graph neural network, allowing the model to leverage descriptions or labels associated with keypoints to enhance understanding and localization accuracy.

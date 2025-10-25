@@ -1,0 +1,11 @@
+{
+  "id": "tozlOEN4qp",
+  "target_idea": "Repurpose the diffusion framework for heavy-tail estimation by using multivariate Student-t distributions, developing a tailored perturbation kernel, and deriving a denoising posterior based on the conditional Student-t distribution. Introduce a training objective inspired by γ-divergence for heavy-tailed distributions, allowing controllable tail generation with a single scalar hyperparameter, and propose t-EDM and t-Flow as extensions of existing models using a Student-t prior.",
+  "context": "Diffusion models are known for their high-quality generation across various applications, but they struggle to accurately capture rare or extreme events in heavy-tailed distributions. Traditional diffusion and flow-matching models with standard Gaussian priors are inadequate for modeling heavy-tailed behavior.",
+  "initial_idea": "Develop a hybrid diffusion model that incorporates Lévy processes as the underlying stochastic drivers instead of the traditional Brownian motion. The Lévy processes are characterized by their heavy tails and better suit the nature of data distributions involving rare or extreme events. This model can be optimized by adaptively tuning the parameters of the Lévy process (like skewness and scale) based on the observed data, using a meta-learning approach that adjusts these parameters across different training epochs to improve the fidelity of event representation.",
+  "final_idea": "Employ a hierarchical Bayesian framework within the diffusion model where the priors are heavy-tailed distributions, such as Cauchy or stable distributions. This approach would allow for a more robust estimation of the tail behavior by inferring distribution parameters from the data itself, potentially improving the capture of rare events.",
+  "final_sim_score": 0.78,
+  "rounds_run": 40,
+  "explored_total": 76,
+  "elapsed_sec": 1152.8836328983307
+}

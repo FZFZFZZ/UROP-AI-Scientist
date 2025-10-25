@@ -1,0 +1,11 @@
+{
+  "id": "FSjIrOm1vz",
+  "target_idea": "Investigate inference scaling for retrieval augmented generation (RAG) by combining multiple strategies such as in-context learning and iterative prompting, beyond just increasing the amount of knowledge. Develop a computation allocation model to predict optimal inference parameters under various constraints, thereby enhancing RAG performance by effectively utilizing scaled inference computation.",
+  "context": "The scaling of inference computation has enabled long-context large language models (LLMs) to perform better in various settings, particularly for knowledge-intensive tasks. However, merely expanding the context by incorporating more external knowledge does not always improve performance unless this knowledge is effectively utilized. The challenge lies in optimizing the use of increased computational resources to enhance the model's ability to acquire and use contextual information.",
+  "initial_idea": "Develop a dynamic context modulation mechanism for LLMs that adjusts the amount of context used based on the computational complexity and the relevance of the task at hand. This mechanism employs an adaptive indexing system that prioritizes key sections of the context while temporarily suppressing less relevant details, varying the 'depth' and 'breadth' of context in real-time as the model processes inputs. This would not only optimize computational resources but also enhance the model’s performance by focusing on the most pertinent information for decision making.",
+  "final_idea": "Develop a dynamic context modulation mechanism for LLMs that adjusts the amount of context used based on the computational complexity and the relevance of the task at hand. This mechanism employs an adaptive indexing system that prioritizes key sections of the context while temporarily suppressing less relevant details, varying the 'depth' and 'breadth' of context in real-time as the model processes inputs. This would not only optimize computational resources but also enhance the model’s performance by focusing on the most pertinent information for decision making.",
+  "final_sim_score": 0.72,
+  "rounds_run": 40,
+  "explored_total": 91,
+  "elapsed_sec": 1002.7875537872314
+}

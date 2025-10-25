@@ -8,7 +8,7 @@ from helper import get_response
 MAX_ATTEMPTS = 20
 SLEEP_BETWEEN_ATTEMPTS = 0.01
 
-MODEL = "gpt-4o-mini" # choose from gpt-4o-mini, gpt-4o, gpt-5
+MODEL = "gpt-4o" # choose from gpt-4o-mini, gpt-4o, gpt-5
 
 IN_PATH  = "Data/context_idea_extraction/data.jsonl"
 OUT_DIR  = "Data/context_idea_extraction"

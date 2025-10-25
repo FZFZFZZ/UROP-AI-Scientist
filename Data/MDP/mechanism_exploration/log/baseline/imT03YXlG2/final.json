@@ -1,0 +1,11 @@
+{
+  "id": "imT03YXlG2",
+  "target_idea": "Develop a new Sparse Autoencoder (SAE) for the CLIP vision transformer, called PatchSAE, to extract interpretable concepts at granular levels and their spatial attributions, and explore how these concepts influence model outputs in image classification tasks and how prompt-based adaptation techniques affect these associations.",
+  "context": "Adapting foundation models for specific tasks is a common practice in building machine learning systems for various applications. However, the mechanisms involved in this adaptation process remain unclear, particularly in understanding how model inputs are associated with interpretable concepts during adaptation.",
+  "initial_idea": "Develop a dynamic concept-alignment framework that creates a visual map of how a foundation model's understanding of concepts evolves during task-specific adaptation. The framework would use techniques from interpretable AI, such as layer-wise relevance propagation or attention-based explanations, to trace and dynamically visualize the change in the model's internal representation of key concepts over time and across different tasks. This approach could help in identifying which aspects of the model are being modified during adaptation and how these changes align with human-understandable concepts, thereby providing deeper insights into the adaptation process and highlighting areas for potential improvement in model accuracy and reliability.",
+  "final_idea": "Develop a dynamic concept-alignment framework that creates a visual map of how a foundation model's understanding of concepts evolves during task-specific adaptation. The framework would use techniques from interpretable AI, such as layer-wise relevance propagation or attention-based explanations, to trace and dynamically visualize the change in the model's internal representation of key concepts over time and across different tasks. This approach could help in identifying which aspects of the model are being modified during adaptation and how these changes align with human-understandable concepts, thereby providing deeper insights into the adaptation process and highlighting areas for potential improvement in model accuracy and reliability.",
+  "final_sim_score": 0.68,
+  "rounds_run": 40,
+  "explored_total": 132,
+  "elapsed_sec": 1190.3536460399628
+}

@@ -1,0 +1,11 @@
+{
+  "id": "9mjZ800m7Y",
+  "target_idea": "Propose a novel NAS algorithm that encodes user preferences to balance performance and hardware metrics, producing diverse architectures across multiple devices in a single search run. This is achieved by parameterizing the joint architectural distribution via a hypernetwork conditioned on hardware features and preference vectors, allowing for zero-shot transferability to new devices.",
+  "context": "In multi-objective optimization (MOO) for neural architecture search (NAS), the challenge lies in finding a diverse set of Pareto optimal solutions, especially when dealing with expensive objectives that require training neural networks. The task involves balancing performance and hardware metrics across various devices, and previous NAS approaches have simplified this by incorporating hardware constraints into the objective function. However, profiling the Pareto front remains computationally expensive as it requires a separate search for each constraint.",
+  "initial_idea": "Introduce a transfer learning approach to multi-objective optimization in NAS by using a meta-model trained on diverse hardware configurations and tasks to predict the Pareto frontier for new tasks and hardware combinations. This meta-model, leveraging data from past NAS optimizations, provides a quick approximation of Pareto-optimal architectures, significantly reducing the need for exhaustive search and training. This approach exploits historical optimization data to generalize across different tasks and hardware, dynamically adapting to new objectives with minimal computational overhead.",
+  "final_idea": "Develop a zero-shot learning approach for NAS, where the meta-model is designed to predict Pareto-optimal architectures without any prior direct training on specific hardware configurations or tasks. This approach would rely on learning transferable features across different domains and could dramatically reduce the computational cost of profiling the Pareto front.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 63,
+  "elapsed_sec": 831.9109570980072
+}

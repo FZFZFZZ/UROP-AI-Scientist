@@ -1,0 +1,3 @@
+Best score: 0.8
+Best idea:
+Construct a simulation environment where virtual agents perform tasks based on reward models, allowing researchers to observe and measure the impact of RM inaccuracies on agent behavior over time.

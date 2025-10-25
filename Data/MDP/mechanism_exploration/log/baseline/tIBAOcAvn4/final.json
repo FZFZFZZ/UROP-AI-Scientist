@@ -1,0 +1,11 @@
+{
+  "id": "tIBAOcAvn4",
+  "target_idea": "Propose a novel prior-guided approach that enhances ray search efficiency by integrating transfer-based priors from surrogate models into gradient estimators. This method approximates the projection of the true gradient onto a subspace defined by these priors and random directions, improving query efficiency.",
+  "context": "Hard-label attacks are a challenging type of black-box adversarial attack where only the top-1 predicted label is available. A common approach involves searching for the optimal direction from the benign image to minimize the distance to the adversarial region, transforming the problem into a continuous optimization task. This method, however, incurs a high query cost, and existing solutions attempt to reduce this cost using gradient estimation techniques.",
+  "initial_idea": "Develop a reinforcement learning-based framework for hard-label attacks in black-box settings, where an intelligent agent learns an optimal policy for perturbing an image through a series of actions, each representing a potential modification to the image. The agent receives a reward based on the effectiveness of the attack (i.e., whether the perturbed image changes the top-1 predicted label while minimizing detectability and the number of queries). This method uses the agent's ability to learn from sparse rewards and explore more efficient pathways to successful adversarial examples, potentially reducing the query count and increasing the overall efficiency of the attack process.",
+  "final_idea": "Integrate transfer learning with Bayesian optimization by leveraging pre-trained models on similar tasks to initialize the surrogate model, enhancing the efficiency and accuracy of the gradient estimation process in hard-label attacks.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 150,
+  "elapsed_sec": 1252.1869378089905
+}

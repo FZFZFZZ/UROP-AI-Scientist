@@ -1,0 +1,3 @@
+Best score: 0.87
+Best idea:
+Develop a hybrid training protocol where visual data is gradually introduced in increasing complexity and volume to pre-trained LLMs, and evaluate its effect on model robustness and adaptability across diverse multimodal datasets in comparison to baseline VLMs.

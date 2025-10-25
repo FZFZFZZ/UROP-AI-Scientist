@@ -1,0 +1,11 @@
+{
+  "id": "QG31By6S6w",
+  "target_idea": "Introduce Malenia, a multi-scale lesion-level mask-attribute alignment framework for 3D zero-shot lesion segmentation, which enhances compatibility between mask representations and their elemental attributes. It includes a Cross-Modal Knowledge Injection module to improve visual and textual features, guiding the generation of segmentation results.",
+  "context": "Recent advancements in medical vision-language pre-training models have significantly improved zero-shot disease recognition. However, transferring image-level knowledge to pixel-level tasks like lesion segmentation in 3D CT scans is challenging due to the complexity and variability of pathological visual characteristics. Existing methods struggle to align fine-grained lesion features not encountered during training with disease-related textual representations.",
+  "initial_idea": "Develop a hybrid transfer learning algorithm that integrates attention mechanisms with contrastive learning to enhance the fine-grained feature alignment between 3D CT scan images and disease-related textual descriptions. This algorithm could utilize attention to selectively focus on regions within the images that are most likely to contain lesions, learning from both region-specific and global contrastive signals to better match these visual features with corresponding textual annotations in a zero-shot setting. This approach helps the model to dynamically adjust and refine its focus on critical areas, improving lesion segmentation accuracy in complex and variable pathological scenarios.",
+  "final_idea": "Utilize a contrastive learning framework to explicitly align the embeddings of image regions and corresponding textual descriptions at multiple resolutions, thus improving the model's ability to generalize from seen to unseen lesion types.",
+  "final_sim_score": 0.82,
+  "rounds_run": 40,
+  "explored_total": 84,
+  "elapsed_sec": 1111.2392539978027
+}

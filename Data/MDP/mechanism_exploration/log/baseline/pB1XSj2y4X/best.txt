@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Employ a graph-based representation of molecules in the generative model, which can be directly linked to a database of synthetic reactions, allowing the model to generate molecules with known synthetic routes.

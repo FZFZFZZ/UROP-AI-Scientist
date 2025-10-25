@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Establish a benchmarking protocol for continual learning algorithms that includes standardized metrics for computational and storage efficiency. This protocol would help in evaluating the performance of different continual learning approaches under uniform resource constraints, promoting fair comparisons and encouraging the development of more resource-efficient algorithms.

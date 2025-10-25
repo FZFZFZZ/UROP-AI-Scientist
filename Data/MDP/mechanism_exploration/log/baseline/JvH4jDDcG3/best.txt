@@ -1,0 +1,3 @@
+Best score: 0.82
+Best idea:
+Employ a multi-task learning approach where one task focuses on cluster assignment and another on confidence estimation. This dual-task architecture would allow the model to leverage shared representations while independently optimizing for accurate clustering and realistic confidence estimation, promoting better generalization and calibration.

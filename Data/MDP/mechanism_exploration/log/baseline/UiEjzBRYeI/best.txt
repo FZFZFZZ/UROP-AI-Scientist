@@ -1,0 +1,3 @@
+Best score: 0.72
+Best idea:
+Adopt a zero-shot learning paradigm in SAM to enable it to handle unseen semantic classes by leveraging semantic descriptions of classes and correlating them with known patches, potentially expanding its applicability without extensive retraining.

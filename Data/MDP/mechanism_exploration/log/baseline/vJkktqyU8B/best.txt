@@ -1,0 +1,3 @@
+Best score: 0.75
+Best idea:
+Propose a new architectural design for ViTs that integrates memory-efficient normalization and reshaping directly into the network architecture, allowing for streamlined data flow and reduced memory overhead.

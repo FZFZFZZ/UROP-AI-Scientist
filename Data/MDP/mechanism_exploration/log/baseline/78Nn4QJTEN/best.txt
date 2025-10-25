@@ -1,0 +1,3 @@
+Best score: 0.68
+Best idea:
+Explore the use of a modified transformer architecture with a bifurcated attention pathway, one for the initial token and another for the rest, to balance the attention distribution more effectively during pre-training.
